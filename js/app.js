@@ -6,27 +6,24 @@ window.addEventListener('scroll', fixedNav);
 
 function fixedNav() {
     if(window.scrollY > nav.offsetHeight + 150) {
-        emailSection.style.display = 'block'
-        webSection.style.display = 'block'
+        
         nav.classList.add('active')
+        emailSection.classList.add('scroll')
+        webSection.classList.add('scroll')
         
        
     } else {
-        emailSection.style.display = 'none'
-        webSection.style.display = 'none'
+       
         nav.classList.remove('active')
+        emailSection.classList.remove('scroll')
+        webSection.classList.remove('scroll')
+       
     }
 }
 
 
 
-arrowBtn.addEventListener('click', function(e) {
-    if(emailSection.style.display = 'none')
-    if(webSection.style.display = 'none') {
-        emailSection.style.display = 'block';
-        webSection.style.display = 'block';
-    }
-})
+
 
 
 

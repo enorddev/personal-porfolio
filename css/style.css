@@ -9,7 +9,8 @@
 body {
     background: url("/img/pexels-cottonbro-5083217.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position:inherit;
+    background-size:cover;
     /* background-color: rgba(15, 15, 15, 0.767);  
     backdrop-filter: blur(4px); */
     font-family: 'Encode Sans', sans-serif;
@@ -71,6 +72,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-around; */
+    
     
 }
     
@@ -204,6 +206,7 @@ body {
     width: 100%;
     max-width: 250px;
     margin: auto;
+    
 }
 
 /* .skills.active {
@@ -247,6 +250,8 @@ body {
     text-underline-offset: 12px;
 }
 
+.services
+
 .services-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -273,21 +278,23 @@ body {
     border-radius: 6px;
     background-color: rgba(253, 226, 226, 0.15);  
     backdrop-filter: blur(1px);
-    
-    
 }
+    
+    
 
-.email.active {
+.email.scroll {
     animation-name: moveInleft;
-    animation-duration: 2s;
-    display: none;
+    animation-duration: 4s;
+    /* display: none; */
+    position: relative;
     
 }
 
-.web.active {
+.web.scroll {
     animation-name: moveInRight;
-    animation-duration: 2s; 
-    display: none;
+    animation-duration: 4s; 
+    /* display: none; */
+    position: relative;
     
 }
 
