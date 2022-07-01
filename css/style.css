@@ -7,9 +7,11 @@
 }
 
 body {
-    background: url("/img/main-bg.jpg");
+    background: url("/img/pexels-cottonbro-5083217.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    /* background-color: rgba(15, 15, 15, 0.767);  
+    backdrop-filter: blur(4px); */
     font-family: 'Encode Sans', sans-serif;
 }
 
@@ -27,7 +29,7 @@ body {
 }
 
 .navbar a {
-    color: #ffffff;
+    color: #000000;
 }
 
 .navbar.active {
@@ -70,7 +72,7 @@ body {
 
 .desc {
     /* text-align: center; */
-    color: #ffffff;
+    color: #000000;
     width: 100%;
     max-width: 550px;
     /* margin: 0 auto; */
@@ -113,7 +115,7 @@ body {
 }
 
 .btn {
-    color: #fff;
+    color: rgb(0, 0, 0);
     margin-top: 20px;
     transition: all 0.4s ease-in-out;
     border-width: 4px;
@@ -127,7 +129,7 @@ body {
 
 .arrow {
     text-align: center;
-    margin: 10% 0;
+    margin: 18% 0;
 }
 
 
@@ -149,10 +151,14 @@ body {
     }
   }
 
-    
+.arrow .fas {
+    color: #000000;
+    font-size: 40px;
+}    
 
 .fas {
-    color: #ffffff;
+    color: #000000;
+    
    
 }
 
@@ -174,12 +180,12 @@ body {
     border-radius: 30px;
 }
 
-.skills {
-    padding-top: 60px;
+/* .skills {
+    padding-top: 10px;
     
     
     
-}
+} */
 
 .skills h1 {
     letter-spacing: 5px;
@@ -221,12 +227,12 @@ body {
 }
 
 .services {
-    padding-top: 75px;
+    padding-top: 100px;
 }
 
 .services h1 {
     text-align: center;
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 
 .services-content {

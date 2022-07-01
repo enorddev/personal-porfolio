@@ -1,4 +1,5 @@
 const nav = document.querySelector('.navbar'); 
+const arrowBtn = document.querySelector('.arrow');
 window.addEventListener('scroll', fixedNav);
 
 function fixedNav() {
@@ -8,3 +9,5 @@ function fixedNav() {
         nav.classList.remove('active')
     }
 }
+
+
