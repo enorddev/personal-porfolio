@@ -13,6 +13,7 @@ body {
     /* background-color: rgba(15, 15, 15, 0.767);  
     backdrop-filter: blur(4px); */
     font-family: 'Encode Sans', sans-serif;
+    position: relative;
 }
 
 .navbar {
@@ -36,6 +37,11 @@ body {
     background-color:#000000;
     padding-top: 10px;
     padding-bottom: 10px;
+    
+}
+
+.navbar.active a {
+    color: #fff;
 }
 
 
@@ -129,7 +135,7 @@ body {
 
 .arrow {
     text-align: center;
-    margin: 18% 0;
+    margin: 12% 0;
 }
 
 
@@ -180,12 +186,12 @@ body {
     border-radius: 30px;
 }
 
-/* .skills {
-    padding-top: 10px;
+.skills {
+    padding-top: 60px;
+}
     
     
     
-} */
 
 .skills h1 {
     letter-spacing: 5px;
@@ -227,12 +233,18 @@ body {
 }
 
 .services {
-    padding-top: 100px;
+    padding-top: 200px;
+   
+    
+    
 }
 
 .services h1 {
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    text-decoration-color: rgba(245, 18, 18, 0.842);
+    text-underline-offset: 12px;
 }
 
 .services-content {
@@ -242,40 +254,77 @@ body {
     align-items: flex-start;
     width: 100%;
     max-width: 1200px;
-    margin: auto;
-    color: #fff;
+    margin:  auto;
+    color: rgb(0, 0, 0);
     text-align: center;
+    /* transform: translate(-50%, -50%); */
+    
 }
+    
+    
+    
 
 .email, .web {
     width: 100%;
-    max-width: 525px;
-}
-
-
-
-/* .footer {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    max-width: 575px;
+    
+    /* height: 30vh; */
+    margin-top: 60px;
+    border-radius: 6px;
+    background-color: rgba(253, 226, 226, 0.15);  
+    backdrop-filter: blur(1px);
+    
     
 }
 
-.foot-left span {
-    font-size: 25px;
-    color: #ffffff;
-    color: black;
+.email.active {
+    animation-name: moveInleft;
+    animation-duration: 2s;
+    display: none;
+    
+}
+
+.web.active {
+    animation-name: moveInRight;
+    animation-duration: 2s; 
+    display: none;
+    
+}
+
+@keyframes moveInleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+
 }
 
 
-.foot-right {
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
-} */
-
+    
+    
+   
 
