@@ -7,7 +7,7 @@
 }
 
 body {
-    background: url("/img/pexels-cottonbro-5083217.jpg");
+    background: url("/img/pexels-mateusz-dach-454507.jpg");
     background-repeat: no-repeat;
     background-position:inherit;
     background-size:cover;
@@ -32,6 +32,12 @@ body {
 
 .navbar a {
     color: #000000;
+}
+
+.navbar a:hover,
+.navbar.active a:hover {
+    color: rgba(245, 18, 18, 0.842);
+    
 }
 
 .navbar.active {
@@ -88,7 +94,8 @@ body {
 
 .desc h1, 
 .skills h1,
-.services h1 {
+.services h1,
+.pojects-title h1 {
     font-weight: 600;
     font-size: 48px;
 }
@@ -160,17 +167,15 @@ body {
   }
 
 .arrow .fas {
-    color: #000000;
+    color: #ffffff;
     font-size: 40px;
 }    
 
 .fas {
     color: #000000;
     
-   
 }
-
-
+   
 
 .content {
     width: 100%;
@@ -189,7 +194,8 @@ body {
 }
 
 .skills {
-    padding-top: 60px;
+    padding-top: 150px;
+    z-index: -1;
 }
     
     
@@ -202,17 +208,10 @@ body {
     text-decoration: underline;
     text-decoration-color: rgba(245, 18, 18, 0.842);
     text-underline-offset: 12px;
-    border-radius: 6px;
-    width: 100%;
-    max-width: 250px;
-    margin: auto;
-    
 }
+    
+    
 
-/* .skills.active {
-    transition: all 0.8s ease-in-out; 
-    margin-left: -1300px;
-} */
 .skills-links {
     
     border-radius: 6px;
@@ -236,7 +235,7 @@ body {
 }
 
 .services {
-    padding-top: 200px;
+    padding-top: 170px;
    
     
     
@@ -250,7 +249,7 @@ body {
     text-underline-offset: 12px;
 }
 
-.services
+
 
 .services-content {
     display: grid;
@@ -260,7 +259,7 @@ body {
     width: 100%;
     max-width: 1200px;
     margin:  auto;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
     /* transform: translate(-50%, -50%); */
     
@@ -280,7 +279,12 @@ body {
     backdrop-filter: blur(1px);
 }
     
-    
+.service-title.move,
+.skills.move {
+    animation-duration: 4s;
+    position: relative;
+    animation-name: movedown;
+}    
 
 .email.scroll {
     animation-name: moveInleft;
@@ -329,6 +333,37 @@ body {
     }
 
 }
+
+@keyframes movedown {
+    0% {
+        opacity: 0;
+        transform: translatey(100px);
+    }
+
+    80% {
+        transform: translatey(-10px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.projects {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.project-title h1 {
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: rgba(245, 18, 18, 0.842);
+    text-underline-offset: 12px;
+}
+    
+    
+
 
 
     
