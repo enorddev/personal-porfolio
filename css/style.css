@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
 
 * {
     box-sizing: border-box;
@@ -7,13 +8,13 @@
 }
 
 body {
-    background: url("/img/pexels-mateusz-dach-454507.jpg");
+    background: url("/img/pexels-caio-1279109.jpg");
     background-repeat: no-repeat;
     background-position:inherit;
     background-size:cover;
     /* background-color: rgba(15, 15, 15, 0.767);  
     backdrop-filter: blur(4px); */
-    font-family: 'Encode Sans', sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
     position: relative;
 }
 
@@ -28,6 +29,10 @@ body {
     padding-top: 25px;
     padding-bottom: 25px;
    
+}
+
+.navbar-brand {
+    transition: all 0.7s ease-in-out;
 }
 
 .navbar a {
@@ -69,36 +74,18 @@ body {
 .container {
     color: #ffffff;
     padding-top: 200px;
-    /* text-align: center; */
-    /* border: thin solid red; */
-    /* margin: auto; */
     width: 100%;
-    /* max-width: 450px; */
-    /* display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around; */
-    
-    
 }
     
-
-
+    
 .desc {
-    /* text-align: center; */
-    color: #000000;
+    color: #ffffff;
     width: 100%;
     max-width: 550px;
-    /* margin: 0 auto; */
+  
+
 }
 
-.desc h1, 
-.skills h1,
-.services h1,
-.pojects-title h1 {
-    font-weight: 600;
-    font-size: 48px;
-}
 
 .desc p {
     padding-top: 15px;
@@ -107,8 +94,15 @@ body {
 }
 
 .desc a {
-    text-decoration: underline;
-    color: rgba(245, 18, 18, 0.842) ;
+    color: rgba(245, 18, 18, 0.842);
+    font-weight: 600;
+}
+
+.desc a:hover {
+     text-decoration: underline;
+     color: #000000;
+     
+
 }
 
 .project-btn {
@@ -222,7 +216,7 @@ body {
     padding-bottom: 70px;
     background-color: rgba(253, 226, 226, 0.15);  
     backdrop-filter: blur(1px);
-    
+    margin-top: 60px;
 }
 
 .grid {
@@ -236,6 +230,7 @@ body {
 
 .services {
     padding-top: 170px;
+    
    
     
     
@@ -247,6 +242,7 @@ body {
     text-decoration: underline;
     text-decoration-color: rgba(245, 18, 18, 0.842);
     text-underline-offset: 12px;
+    z-index: -1;
 }
 
 
@@ -261,9 +257,13 @@ body {
     margin:  auto;
     color: rgb(255, 255, 255);
     text-align: center;
+    
+    
     /* transform: translate(-50%, -50%); */
     
 }
+
+
     
     
     
@@ -271,12 +271,17 @@ body {
 .email, .web {
     width: 100%;
     max-width: 575px;
-    
-    /* height: 30vh; */
     margin-top: 60px;
     border-radius: 6px;
     background-color: rgba(253, 226, 226, 0.15);  
     backdrop-filter: blur(1px);
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.email:hover,
+.web:hover {
+    transform: scale(1.05);
 }
     
 .service-title.move,
@@ -361,7 +366,69 @@ body {
     text-decoration-color: rgba(245, 18, 18, 0.842);
     text-underline-offset: 12px;
 }
+
+.project-menu {
+    padding-top: 50px;
+    color: #fff;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.nav-item button {
+    background-color: transparent;
+    color: #fff;
+    font-size: 14px;
+    transition: all 0.4s ease-in-out;
+    border-radius: 6px;
     
+}
+
+.nav-item button:hover {
+    background-color: #fff;
+    color: #000000;
+    border-color: rgba(245, 18, 18, 0.842);
+    
+}
+
+
+.card{
+    background-color: rgba(253, 226, 226, 0.15);  
+    backdrop-filter: blur(1px);
+}
+
+.card-body {
+    color: #ffffff;
+}
+
+.card-body a {
+    background-color: #fff;
+    transition: all 0.4s ease-in-out;
+}
+
+.tab-content {
+    padding-top: 60px;
+}
+
+.card-body a:hover {
+    background-color: rgba(245, 18, 18, 0.842);
+    
+    color: #fff;
+}
+.card {
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.06);
+    border-radius: 6px;
+    opacity: 0.6;
+    
+}
     
 
 
