@@ -15,7 +15,7 @@ body {
     /* background-color: rgba(15, 15, 15, 0.767);  
     backdrop-filter: blur(4px); */
     font-family: 'IBM Plex Mono', monospace;
-    position: relative;
+    /* position: relative; */
 }
 
 .navbar {
@@ -169,6 +169,36 @@ body {
     color: #000000;
     
 }
+
+.arrow-top .fas {
+    position:fixed;
+    display: inline-block;
+    color: #fff;
+    font-size: 40px;
+    background-color: rgba(253, 226, 226, 0.15); 
+    border-radius: 6px; 
+    backdrop-filter: blur(1px);
+    padding: 12px 12px;
+    text-align: center;
+    bottom: 30px;
+    right: 30px;
+    /* transition: all 0.4s ease-in-out; */
+    
+    
+}
+
+/* .arrow-top .fas {
+    
+} */
+
+.arrow-top.pageUp .fas {
+    animation-duration: 4s;
+    position: relative;
+    animation-name: moveright;
+    /* transition: all 0.4s ease-in-out; */
+}
+
+
    
 
 .content {
@@ -257,16 +287,7 @@ body {
     margin:  auto;
     color: rgb(255, 255, 255);
     text-align: center;
-    
-    
-    /* transform: translate(-50%, -50%); */
-    
 }
-
-
-    
-    
-    
 
 .email, .web {
     width: 100%;
