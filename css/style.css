@@ -8,7 +8,7 @@
 }
 
 body {
-    background: url("/img/pexels-caio-1279109.jpg");
+    background: url("/img/pexels-cottonbro-5083217.jpg");
     background-repeat: no-repeat;
     background-position:inherit;
     background-size:cover;
@@ -285,13 +285,15 @@ body {
 }
     
 .service-title.move,
-.skills.move {
+.skills.move
+ {
     animation-duration: 4s;
     position: relative;
     animation-name: movedown;
 }    
 
-.email.scroll {
+.email.scroll,
+.card.hover {
     animation-name: moveInleft;
     animation-duration: 4s;
     /* display: none; */
@@ -398,6 +400,7 @@ body {
 .card{
     background-color: rgba(253, 226, 226, 0.15);  
     backdrop-filter: blur(1px);
+    width: 26rem !important;
 }
 
 .card-body {
@@ -428,6 +431,25 @@ body {
     border-radius: 6px;
     opacity: 0.6;
     
+}
+
+.footer {
+    margin-top: 120px;
+    background: #000000;
+    width: 100%;
+    max-width: 1920px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer a {
+    
+    color: #fff;
+}
+
+.copyright {
+    padding-top: 50px;
+    color: #fff;
 }
     
 
