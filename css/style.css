@@ -19,7 +19,7 @@ body {
 }
 
 .navbar {
-    /* box-shadow: none; */
+    
     background-color: transparent;
     position: fixed;
     top: 0;
@@ -191,13 +191,16 @@ body {
     
 } */
 
-.arrow-top.pageUp .fas {
+.arrow-top.pageUp .fas,
+.navbar,
+.desc,
+.project-btn {
     animation-duration: 4s;
     animation-name: moveInRight;
     transition: all 0.4s ease-in-out;
-    
-    
 }
+    
+    
 
 
    
