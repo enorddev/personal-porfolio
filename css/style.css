@@ -193,9 +193,10 @@ body {
 
 .arrow-top.pageUp .fas {
     animation-duration: 4s;
-    position: relative;
-    animation-name: moveright;
-    /* transition: all 0.4s ease-in-out; */
+    animation-name: moveInRight;
+    transition: all 0.4s ease-in-out;
+    
+    
 }
 
 
