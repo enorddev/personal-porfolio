@@ -6,6 +6,8 @@ const serviceAnimation = document.querySelector('.service-title');
 const skills = document.querySelector('.skills');
 const card = document.querySelector('.g-col-6');
 const arrowTop = document.querySelector('.arrow-top')
+const textEl = document.getElementById('text')
+const text = "<Hi, I'm Edwin./>"
 window.addEventListener('scroll', fixedNav);
 
 function fixedNav() {
@@ -26,6 +28,21 @@ function fixedNav() {
         skills.classList.remove('move')
         arrowTop.classList.add('pageUp')
     }
+}
+
+
+let textIdx = 1;
+writeText();
+
+function writeText() {
+    textEl.innerText = text.slice(0, textIdx)
+    textIdx++
+
+    if(textIdx > text.length) {
+        textIdx = text.value.innerText
+    }
+
+    setTimeout(writeText, 300)
 }
        
 
