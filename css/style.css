@@ -10,7 +10,7 @@
 body {
     background: url("/img/pexels-nao-triponez-129208.jpg");
     background-repeat: no-repeat;
-    background-position:center;
+    background-position:inherit;
     background-size:cover;
     width: 100%;
     max-width: 1920px;
