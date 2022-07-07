@@ -8,9 +8,9 @@
 }
 
 body {
-    background: url("/img/pexels-nao-triponez-129208.jpg");
+    background: url("/img/pexels-craig-dennis-205421.jpg");
     background-repeat: no-repeat;
-    background-position:inherit;
+    background-position:center;
     background-size:cover;
     width: 100%;
     max-width: 1920px;
@@ -375,7 +375,7 @@ body {
 .card{
     background-color: rgba(253, 226, 226, 0.15);  
     backdrop-filter: blur(1px);
-    width: 26rem !important;
+    width: 20rem !important;
 }
 
 .card-body {
@@ -393,9 +393,9 @@ body {
 
 .card-body a:hover {
     background-color: rgba(245, 18, 18, 0.842);
-    
     color: #fff;
 }
+    
 
 .card-body .fas {
     color: #fff;
@@ -422,6 +422,7 @@ body {
     background: #000000;
     width: 100%;
     max-width: 1920px;
+    text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
 }
