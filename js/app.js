@@ -6,8 +6,7 @@ const serviceAnimation = document.querySelector('.service-title');
 const skills = document.querySelector('.skills');
 const card = document.querySelector('.g-col-6');
 const arrowTop = document.querySelector('.arrow-top')
-const textEl = document.getElementById('text')
-const text = "<Hi, I'm Edwin./>"
+
 window.addEventListener('scroll', fixedNav);
 
 function fixedNav() {
@@ -31,7 +30,13 @@ function fixedNav() {
 }
 
 
-let textIdx = 1;
+
+// AUTO TEXT EFFECT //
+
+const textEl = document.getElementById('text')
+const text = "<Hi, I'm Edwin./>"
+
+let textIdx = 0;
 writeText();
 
 function writeText() {
@@ -41,9 +46,9 @@ function writeText() {
     if(textIdx > text.length) {
         textIdx = text.value.innerText
     }
-
     setTimeout(writeText, 300)
 }
+
        
 
 

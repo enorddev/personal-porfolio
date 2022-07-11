@@ -305,7 +305,7 @@ body {
 .service-title.move,
 .skills.move
  {
-    animation-duration: 4s;
+    animation-duration: 2s;
     position: relative;
     animation-name: movedown;
 }    
@@ -313,14 +313,14 @@ body {
 .email.scroll,
 .card.hover {
     animation-name: moveInleft;
-    animation-duration: 4s;
+    animation-duration: 2s;
     position: relative;
     
 }
 
 .web.scroll {
     animation-name: moveInRight;
-    animation-duration: 4s; 
+    animation-duration: 2s; 
     position: relative;
     
 }
@@ -358,7 +358,7 @@ body {
     background-color: transparent;
     color: #fff;
     font-size: 14px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
     border-radius: 6px;
     
 }
@@ -375,7 +375,7 @@ body {
 .card{
     background-color: rgba(253, 226, 226, 0.15);  
     backdrop-filter: blur(1px);
-    width: 20rem !important;
+    width: 22rem !important;
 }
 
 .card-body {
@@ -384,7 +384,7 @@ body {
 
 .card-body a {
     background-color: rgb(0, 0, 0);
-    transition: all 0.4s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .tab-content {
@@ -400,17 +400,22 @@ body {
 .card-body .fas {
     color: #fff;
 }
+
     
 .card {
     transition: all 0.2s ease-in-out;
     cursor: pointer;
+    
+    
 }
 
 .card:hover {
     /* transform: scale(1.06); */
     border-radius: 6px;
-    opacity: 0.7;
+    /* opacity: 0.7; */
+    background:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.3))
 }
+
 
 /*PROJECT SECTION ENDS HERE */
 
