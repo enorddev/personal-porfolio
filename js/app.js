@@ -28,6 +28,14 @@ function fixedNav() {
 }
 
 
+// REMOVE ACTIVE CLASS ON LOAD //
+window.addEventListener('load', reloadNav => {
+    nav.classList.remove('active')
+});
+
+
+
+
 
 // AUTO TEXT EFFECT //
 
