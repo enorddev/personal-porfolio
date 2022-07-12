@@ -8,7 +8,7 @@
 }
 
 body {
-    background: url("/img/pexels-nao-triponez-129208.jpg");
+    background: url("/img/pexels-craig-dennis-205421.jpg");
     background-repeat: no-repeat;
     background-position:inherit;
     background-size:cover;
@@ -28,6 +28,7 @@ body {
     transition: all 0.7s ease-in-out;
     padding-top: 25px;
     padding-bottom: 25px;
+    z-index: 1;
 }
    
 .navbar-toggler .fas {
@@ -45,11 +46,12 @@ body {
 
 .navbar a:hover,
 .navbar.active a:hover,
-.footer .fa:hover,
+.footer .nav-item .fa:hover,
 .footer .fab:hover {
     color: #000000;
     background: rgba(245, 18, 18, 0.842);
     box-shadow: 0 0 5px rgba(245, 18, 18, 0.842), 0 0 25px rgba(245, 18, 18, 0.842), 0 0 50px rgba(245, 18, 18, 0.842), 0 0 200px rgba(245, 18, 18, 0.842) ;
+    
 }
 
 .navbar.active {
@@ -86,6 +88,7 @@ body {
     color: #ffffff;
     padding-top: 200px;
     width: 100%;
+    
 }
     
     
@@ -93,6 +96,7 @@ body {
     color: #ffffff;
     width: 100%;
     max-width: 550px;
+    
 }
   
 .desc p {
@@ -111,6 +115,7 @@ body {
     color: #000000;
     background: rgba(245, 18, 18, 0.842);
     box-shadow: 0 0 5px rgba(245, 18, 18, 0.842), 0 0 25px rgba(245, 18, 18, 0.842), 0 0 50px rgba(245, 18, 18, 0.842), 0 0 200px rgba(245, 18, 18, 0.842) ;
+    transform: scale(0.98);
 }
      
 .project-btn {
@@ -131,7 +136,7 @@ body {
 
 #resume:hover {
     background: rgba(245, 18, 18, 0.842);
-    box-shadow: 0 0 5px rgba(245, 18, 18, 0.842), 0 0 25px rgba(245, 18, 18, 0.842), 0 0 50px rgba(245, 18, 18, 0.842), 0 0 200px rgba(245, 18, 18, 0.842) ;
+    box-shadow: 0 0 5px rgba(245, 18, 18, 0.842), 0 0 25px rgba(245, 18, 18, 0.842), 0 0 30px rgba(245, 18, 18, 0.842), 0 0 40px rgba(245, 18, 18, 0.842) ;
     color: #ffffff;
     border-color: rgba(245, 18, 18, 0.842);
 }
@@ -145,9 +150,10 @@ body {
 
 .btn:hover {
     background: #fff;
-    box-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 50px #fff, 0 0 200px #fff ;
+    box-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 40px #fff ;
     color: #000000;
     border-color: rgba(245, 18, 18, 0.842);
+    transform: scale(0.98);
 }
 
 .arrow {
@@ -259,7 +265,7 @@ body {
 
 .services {
     padding-top: 170px;
-    z-index: -1;
+    /* z-index: -1; */
     position: relative;
 }
 
@@ -293,18 +299,16 @@ body {
     background-color: rgba(253, 226, 226, 0.15);  
     backdrop-filter: blur(1px);
     transition: all 0.4s ease-in-out;
-    cursor: pointer;
+    cursor:cell;
 }
    
 .email:hover,
 .web:hover {
-    
-    transform: scale(1.05);
+    transform: scale(0.98);
 }
     
 .service-title.move,
-.skills.move
- {
+.skills.move {
     animation-duration: 2s;
     position: relative;
     animation-name: movedown;
@@ -334,6 +338,11 @@ body {
     padding-top: 200px;
     text-align: center;
 }
+
+.grid {
+    padding-bottom: 35px;
+}
+
 
 .project-title h1 {
     color: #fff;
@@ -368,7 +377,7 @@ body {
     color: #000000;
     background: rgba(245, 18, 18, 0.842);
     box-shadow: 0 0 5px rgba(245, 18, 18, 0.842), 0 0 25px rgba(245, 18, 18, 0.842), 0 0 50px rgba(245, 18, 18, 0.842), 0 0 100px rgba(245, 18, 18, 0.842) ;
-    
+    transform: scale(0.98);
 }
 
 
@@ -394,6 +403,7 @@ body {
 .card-body a:hover {
     background-color: rgba(245, 18, 18, 0.842);
     color: #fff;
+    
 }
     
 
@@ -410,7 +420,7 @@ body {
 }
 
 .card:hover {
-    /* transform: scale(1.06); */
+    transform: scale(0.98);
     border-radius: 6px;
     /* opacity: 0.7; */
     background:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.3))
