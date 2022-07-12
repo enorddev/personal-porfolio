@@ -10,9 +10,8 @@ const arrowTop = document.querySelector('.arrow-top')
 window.addEventListener('scroll', fixedNav);
 
 function fixedNav() {
-    if(window.scrollY > nav.offsetHeight + 150) {
+    if(window.scrollY > nav.offsetHeight + 170) {
         nav.classList.add('active')
-        
         emailSection.classList.add('scroll')
         webSection.classList.add('scroll')
         serviceAnimation.classList.add('move')
@@ -20,7 +19,6 @@ function fixedNav() {
         arrowTop.classList.remove('pageUp')
     } else {
         nav.classList.remove('active')
-        
         emailSection.classList.remove('scroll')
         webSection.classList.remove('scroll')
         serviceAnimation.classList.remove('move')
