@@ -8,9 +8,9 @@
 }
 
 body {
-    background: url("/img/pexels-craig-dennis-205421.jpg");
+    background: url("/img/pexels-nao-triponez-129208.jpg");
     background-repeat: no-repeat;
-    background-position:inherit;
+    background-position:center;
     background-size:cover;
     width: 100%;
     max-width: 1920px;
@@ -224,7 +224,7 @@ body {
 
 .skills {
     padding-top: 150px;
-    z-index: -1;
+    /* z-index: -1; */
 }
     
     
