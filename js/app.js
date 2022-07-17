@@ -29,7 +29,7 @@ function fixedNav() {
 
 
 // REMOVE ACTIVE CLASS ON LOAD //
-window.addEventListener('load', reloadNav => {
+window.addEventListener('load', () => {
     nav.classList.remove('active')
 });
 
