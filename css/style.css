@@ -8,9 +8,9 @@
 }
 
 body {
-    background: url("/img/pexels-pixabay-355904.jpg");
+    background: url("/img/pexels-craig-dennis-205421.jpg");
     background-repeat: no-repeat;
-    background-position:center;
+    background-position:inherit;
     background-size:cover;
     width: 100%;
     max-width: 1920px;
