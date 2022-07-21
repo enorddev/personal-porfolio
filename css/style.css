@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai&display=swap');
 
 * {
     box-sizing: border-box;
@@ -8,14 +11,21 @@
 }
 
 body {
-    background: url("/img/pexels-craig-dennis-205421.jpg");
+    background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/img/pexels-mateusz-dach-454507.jpg");
     background-repeat: no-repeat;
-    background-position:inherit;
+    background-position:center;
     background-size:cover;
+
     width: 100%;
     max-width: 1920px;
-    font-family: 'IBM Plex Mono', monospace;
+    /* font-family: 'IBM Plex Mono', monospace; */
+    /* font-family: 'Nunito Sans', sans-serif; */
+    /* font-family: 'Fira Sans', sans-serif; */
+    font-family: 'Arima Madurai', cursive;
+    
 }
+
+
     
 
 /* NAVIGATION SECTION */
@@ -107,10 +117,11 @@ body {
 .desc a {
     color: rgba(245, 18, 18, 0.842);
     font-weight: 600;
+    transition: all 0.4s ease-in-out;
 }
 
 .desc a:hover {
-    text-decoration: underline;
+   
     color: #000000;
     background: rgba(245, 18, 18, 0.842);
     box-shadow: 0 0 5px rgba(245, 18, 18, 0.842), 0 0 25px rgba(245, 18, 18, 0.842), 0 0 50px rgba(245, 18, 18, 0.842), 0 0 200px rgba(245, 18, 18, 0.842) ;
