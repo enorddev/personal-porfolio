@@ -757,6 +757,44 @@ body {
         
 }
 
+@media (max-width: 414px) {
+    .navbar,
+    .footer {
+        width: 100%;
+        max-width: 375px;
+        margin: auto;
+    }
+    .grid .g-col-4 {
+        display: flex;
+        flex-direction: row;
+        padding-top: 25px;
+    }
+
+    .skills-links {
+        width: 100%;
+        max-width: 350px ;
+    }
+
+    .skills-links .grid {
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+    }
+
+    .project-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+    }
+
+    .desc {
+        text-align: center;
+    }
+        
+}
+
 @media (max-width: 375px) {
     .navbar,
     .footer {
