@@ -796,6 +796,11 @@ body {
         margin-top: 20px;
     }
 
+    .g-col-4 img {
+        width: 40px;
+        font-size: 12px;
+    }
+
     .project-btn {
         display: flex;
         flex-direction: column;
@@ -824,6 +829,10 @@ body {
         justify-content: center;
         gap: 10px;
         padding-top: 25px;
+    }
+    .g-col-4 img {
+        width: 40px;
+        font-size: 12px;
     }
 
     .skills-links {
