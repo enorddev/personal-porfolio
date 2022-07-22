@@ -15,7 +15,6 @@ body {
     background-repeat: no-repeat;
     background-position:center;
     background-size:cover;
-
     width: 100%;
     max-width: 1920px;
     /* font-family: 'IBM Plex Mono', monospace; */
@@ -264,14 +263,18 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 60px;
+    gap: 50px;
     margin-top: 20px;
 }
 
 .g-col-4 {
     color: #fff;
     text-align: center;
-    font-family: 'Fira Sans', sans-serif!important
+    font-family: 'Fira Sans', sans-serif!important;
+    display: flex;
+    flex-direction: column;
+    
+    
 }
 
 /* SKILLS SECTION ENDS HERE */
@@ -761,7 +764,7 @@ body {
     .navbar,
     .footer {
         width: 100%;
-        max-width: 375px;
+        max-width: 414px;
         margin: auto;
     }
     .grid .g-col-4 {
@@ -779,6 +782,15 @@ body {
         width: 100%;
         max-width: 300px;
         margin: auto;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
     }
 
     .project-btn {
@@ -819,6 +831,15 @@ body {
         margin: auto;
     }
 
+    .grid {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
     .project-btn {
         display: flex;
         flex-direction: column;
@@ -833,7 +854,9 @@ body {
         
 }
 
-  
+ 
+
+
 
 
     
