@@ -769,7 +769,7 @@ body {
     }
     .grid .g-col-4 {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         padding-top: 25px;
     }
 
@@ -816,7 +816,7 @@ body {
     }
     .grid .g-col-4 {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         padding-top: 25px;
     }
 
