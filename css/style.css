@@ -778,7 +778,10 @@ body {
 
     .skills-links {
         width: 100%;
-        max-width: 350px ;
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .skills-links .grid {
@@ -838,6 +841,9 @@ body {
     .skills-links {
         width: 100%;
         max-width: 350px ;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .skills-links .grid {
