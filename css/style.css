@@ -770,6 +770,8 @@ body {
     .grid .g-col-4 {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        gap: 10px;
         padding-top: 25px;
     }
 
@@ -817,6 +819,8 @@ body {
     .grid .g-col-4 {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        gap: 10px;
         padding-top: 25px;
     }
 
