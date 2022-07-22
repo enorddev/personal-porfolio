@@ -780,10 +780,10 @@ body {
         width: 100%;
         max-width: 400px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
-        gap: 40px;
+        gap: 30px;
     }
 
     .skills-links .grid {
@@ -852,10 +852,10 @@ body {
         width: 100%;
         max-width: 370px ;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
-        gap: 40px;
+        gap: 30px;
     }
 
     .skills-links .grid {
