@@ -42,6 +42,7 @@ body {
     padding-top: 25px;
     padding-bottom: 25px;
     z-index: 1;
+    
 }
    
 .navbar-toggler .fas {
@@ -55,15 +56,16 @@ body {
 
 .navbar a {
     color: #ffffff;
+    
 }
 
 .navbar a:hover,
-.navbar.active a:hover,
-.footer .nav-item .fa:hover,
-.footer .fab:hover {
+.navbar.active a:hover{
     color: #000000;
-    background: rgba(245, 18, 18, 0.842);
+    background: #fff;
     box-shadow: 0 0 5px rgba(245, 18, 18, 0.842), 0 0 25px rgba(245, 18, 18, 0.842), 0 0 50px rgba(245, 18, 18, 0.842), 0 0 200px rgba(245, 18, 18, 0.842) ;
+    border-radius: 50%;
+    transform: scale(0.98);
     
 }
 
