@@ -468,10 +468,25 @@ body {
     padding-bottom: 30px;
 }
 
+.footer .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+}
+
+
+
 .footer a {
-    
     color: #fff;
 }
+
+.footer a:hover {
+    color: rgba(245, 18, 18, 0.842);
+    transform: scale(0.98);
+    text-decoration: line-through;
+    
+}
+    
 
 .copyright {
     padding-top: 50px;
