@@ -11,19 +11,19 @@ window.addEventListener('scroll', fixedNav);
 
 function fixedNav() {
     if(window.scrollY > nav.offsetHeight + 170) {
-        nav.classList.add('active')
-        emailSection.classList.add('scroll')
-        webSection.classList.add('scroll')
-        serviceAnimation.classList.add('move')
-        skills.classList.add('move')
-        arrowTop.classList.remove('pageUp')
+        nav.classList.add('active');
+        emailSection.classList.add('scroll');
+        webSection.classList.add('scroll');
+        serviceAnimation.classList.add('move');
+        skills.classList.add('move');
+        arrowTop.classList.remove('pageUp');
     } else {
-        nav.classList.remove('active')
-        emailSection.classList.remove('scroll')
-        webSection.classList.remove('scroll')
-        serviceAnimation.classList.remove('move')
-        skills.classList.remove('move')
-        arrowTop.classList.add('pageUp')
+        nav.classList.remove('active');
+        emailSection.classList.remove('scroll');
+        webSection.classList.remove('scroll');
+        serviceAnimation.classList.remove('move');
+        skills.classList.remove('move');
+        arrowTop.classList.add('pageUp');
     }
 }
 
