@@ -52,7 +52,7 @@ function writeText() {
     if(textIdx > text.length) {
         textIdx = text.value.innerText
     }
-    setTimeout(writeText, 300)
+    setTimeout(writeText, 250)
 }
 
        

@@ -74,9 +74,9 @@ body {
 
 .navbar.active {
     -webkit-backdrop-filter: blur(8px);  /* Safari 9+ */
-backdrop-filter: blur(8px); /* Chrome and Opera */
-box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%);
-background-color: rgb(228 228 228 / 15%); 
+    backdrop-filter: blur(8px); /* Chrome and Opera */
+    box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%);
+    background-color: rgb(228 228 228 / 15%); 
     padding-top: 10px;
     padding-bottom: 10px;
     position: fixed;
@@ -197,9 +197,9 @@ background-color: rgb(228 228 228 / 15%);
 }
 
 .bounce {
-    -moz-animation: bounce 2s infinite;
-    -webkit-animation: bounce 2s infinite;
-    animation: bounce 2s infinite;
+    -moz-animation: bounce 1s infinite;
+    -webkit-animation: bounce 1s infinite;
+    animation: bounce 1.5s infinite;
 }
   
 .arrow .fas {
@@ -230,7 +230,7 @@ background-color: rgb(228 228 228 / 15%);
 .navbar,
 .desc,
 .project-btn {
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-name: moveInRight;
     transition: all 0.4s ease-in-out;
 }
@@ -354,7 +354,7 @@ background-color: rgb(228 228 228 / 15%);
     
 .service-title.move,
 .skills.move {
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     position: relative;
     animation-name: movedown;
 }    
@@ -362,14 +362,14 @@ background-color: rgb(228 228 228 / 15%);
 .email.scroll,
 .card.hover {
     animation-name: moveInleft;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     position: relative;
     
 }
 
 .web.scroll {
     animation-name: moveInRight;
-    animation-duration: 2s; 
+    animation-duration: 1.5s; 
     position: relative;
     
 }
@@ -959,7 +959,7 @@ background-color: rgb(228 228 228 / 15%);
     .desc {
         text-align: center;
     }
-        
+         
 }
 
  
