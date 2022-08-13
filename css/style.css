@@ -91,8 +91,8 @@ body {
     display: flex;
     flex-direction: row;
     gap: 15px;
-    
 }
+    
 
 .fa,
 .fab {
@@ -236,10 +236,16 @@ body {
 
 
     
-.arrow-top.pageUp .fas,
-.navbar,
+
+/* .navbar, */
 .desc,
 .project-btn {
+    animation-duration: 2s;
+    animation-name: movedown;
+    transition: all 0.4s ease-in-out;
+}
+
+.arrow-top.pageUp .fas {
     animation-duration: 2s;
     animation-name: moveInRight;
     transition: all 0.4s ease-in-out;
