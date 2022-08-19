@@ -15,7 +15,7 @@
 body {
     /* background:linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url("/img/pexels-mateusz-dach-454507.jpg"); */
     /* background:linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url("/img/pexels-neo-1987535.jpg"); */
-    background:linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5) ), url("/img/pexels-cottonbro-5083217.jpg"); 
+    background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5) ), url("/img/pexels-nataliya-vaitkevich-5554701.jpg"); 
     
     background-repeat: no-repeat;
     background-position:center;
@@ -496,13 +496,17 @@ body {
 
 .footer {
     margin-top: 120px;
-    background: #000000;
+    /* background: #000000; */
     width: 100%;
-    /* max-width: 1920px;
-    margin: auto; */
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
+    /* box-shadow: 2px 3px 4px rgba(255, 255, 255, 0.808) ; */
+    -webkit-backdrop-filter: blur(4px);  /* Safari 9+ */
+    backdrop-filter: blur(8px); /* Chrome and Opera */
+    box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%);
+    background-color: rgb(228 228 228 / 15%); 
+
 }
 
 .footer .navbar-nav {
