@@ -17,23 +17,18 @@
 body {
     /* background:linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url("/img/pexels-mateusz-dach-454507.jpg"); */
     /* background:linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url("/img/pexels-neo-1987535.jpg"); */
-    background:linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) ), url("/img/pexels-karolina-grabowska-6958765.jpg"); 
+    background:linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5) ), url("/img/pexels-photomix-company-291777.jpg"); 
     
     background-repeat: no-repeat;
     background-position:center;
     background-size:cover;
     width: 100%;
-    /* max-width: 1920px; */
-    /* font-family: 'IBM Plex Mono', monospace; */
-    /* font-family: 'Nunito Sans', sans-serif; */
-    /* font-family: 'Fira Sans', sans-serif; */
-    /* font-family: 'Poppins', sans-serif; */
     font-family: 'Lato', sans-serif;
-    /* font-family: 'Arima Madurai', cursive; */
-    /* font-family: 'Roboto Slab', serif; */
-    /* font-family: 'Montserrat', sans-serif; */
-    
 }
+
+
+    
+    
 
 
     
@@ -80,7 +75,8 @@ body {
     -webkit-backdrop-filter: blur(8px);  /* Safari 9+ */
     backdrop-filter: blur(8px); /* Chrome and Opera */
     box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%);
-    background-color: rgb(228 228 228 / 15%); 
+    /* background-color: rgb(228 228 228 / 15%);  */
+    background-color: rgba(253, 226, 226, 0.050);  
     padding-top: 10px;
     padding-bottom: 10px;
     position: fixed;
@@ -112,8 +108,17 @@ body {
     color: #ffffff;
     padding-top: 200px;
     width: 100%;
-    
 }
+    
+    
+/* 
+.header {
+    background:linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) ), url("/img/pexels-filippo-bergamaschi-986774.jpg"); 
+    padding-bottom: 25px;
+} */
+    
+    
+    
     
     
 .desc {
@@ -274,17 +279,31 @@ body {
 /*CONTAINER SECTION ENDS HERE */
 
 
+
+
+
 /* SKILLS SECTION */
+
+.section-content {
+    /* background:linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5) ), url("/img/pexels-saya-kimura-401107.jpg");
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    /* background-color: #502628; */
+}
 
 .skills {
     padding-top: 150px;
     /* z-index: -1; */
+    /* background-color: #222222; */
+    
 }
     
     
 .skills h1 {
     letter-spacing: 5px;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     text-decoration: underline;
     text-decoration-color: rgba(245, 18, 18, 0.842);
@@ -299,9 +318,10 @@ body {
     margin: 25px auto;
     padding-top: 50px;
     padding-bottom: 70px;
-    background-color: rgba(253, 226, 226, 0.15);  
-    backdrop-filter: blur(1px);
+    background-color: rgba(228, 228, 228, 0.06);  
+    backdrop-filter: blur(8px);
     margin-top: 60px;
+    
 }
 
 .grid {
@@ -314,7 +334,7 @@ body {
 }
 
 .g-col-4 {
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     font-family: 'Fira Sans', sans-serif!important;
     display: flex;
@@ -361,8 +381,8 @@ body {
     max-width: 575px;
     margin-top: 60px;
     border-radius: 6px;
-    background-color: rgba(253, 226, 226, 0.15);  
-    backdrop-filter: blur(1px);
+    background-color: rgba(165, 165, 165, 0.060);  
+    backdrop-filter: blur(8px);
     transition: all 0.4s ease-in-out;
     cursor:cell;
 }
@@ -499,24 +519,42 @@ body {
     
 
 .footer {
+    
     margin-top: 120px;
     /* background: #000000; */
     width: 100%;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     /* box-shadow: 2px 3px 4px rgba(255, 255, 255, 0.808) ; */
     -webkit-backdrop-filter: blur(4px);  /* Safari 9+ */
     backdrop-filter: blur(8px); /* Chrome and Opera */
     box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%);
-    background-color: rgb(228 228 228 / 15%); 
-
+    background-color: rgba(253, 226, 226, 0.010);  
 }
 
-.footer .navbar-nav {
+.footer-content {
+    /* border: thin solid red;
+    width: 100%;
+    max-width: 550px;
+    margin: auto; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+#foot-navbar {
     display: flex;
     flex-direction: row;
-    gap: 45px;
+}
+    
+    
+
+
+.footer .navbar-nav {
+    /* display: flex;
+    flex-direction: row;
+    gap: 45px; */
 }
 
 
@@ -535,7 +573,7 @@ body {
     
 
 .copyright {
-    padding-top: 50px;
+    /* padding-top: 50px; */
     color: #fff;
 }
 
