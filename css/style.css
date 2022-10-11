@@ -219,6 +219,27 @@ body {
     
 } 
 
+/* .bounce-link {
+    pointer-events: none;
+} */
+
+@media (prefers-reduced-motion: no-preference) {
+    #down-arrow {
+      animation: bounce-spin infinite 5s linear;
+    }
+  }
+
+  @keyframes bounce-spin {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+    
+  }
+  
+
 
 /* .navbar, */
 .desc,
