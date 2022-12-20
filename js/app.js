@@ -7,6 +7,12 @@ const skills = document.querySelector('.skills');
 const card = document.querySelector('.g-col-6');
 const arrowTop = document.querySelector('.arrow-top')
 
+
+// REMOVE ACTIVE CLASS ON LOAD //
+window.addEventListener('load', () => {
+    nav.classList.remove('active')
+});
+
 window.addEventListener('scroll', fixedNav);
 
 function fixedNav() {
@@ -28,10 +34,7 @@ function fixedNav() {
 }
 
 
-// REMOVE ACTIVE CLASS ON LOAD //
-window.addEventListener('load', () => {
-    nav.classList.remove('active')
-});
+
 
 
 

@@ -59,11 +59,11 @@ body {
 }
 
 .navbar.active {
-    -webkit-backdrop-filter: blur(8px);  /* Safari 9+ */
-    backdrop-filter: blur(8px); /* Chrome and Opera */
-    box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%);
+    /*-webkit-backdrop-filter: blur(8px);  /* Safari 9+ */
+    /*backdrop-filter: blur(8px); /* Chrome and Opera */
+    /*box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%);
     /* background-color: rgb(228 228 228 / 15%);  */
-    background-color: rgba(253, 226, 226, 0.050);  
+    /* background-color: rgba(253, 226, 226, 0.050);   */
     padding-top: 10px;
     padding-bottom: 10px;
     position: fixed;
