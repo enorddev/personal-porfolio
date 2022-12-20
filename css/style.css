@@ -7,9 +7,9 @@
 }
 
 body {
-    /* background:linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url("/img/pexels-mateusz-dach-454507.jpg"); */
-    background:linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2) ), url("/img/pexels-mateusz-dach-454507.jpg");
-    /* background: url("/img/pexels-pixabay-459653.jpg");  */
+    background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8) ), url("/img/pexels-olena-bohovyk-1772123.jpg");
+    /* background:linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2) ), url("/img/pexels-mateusz-dach-454507.jpg"); */
+    /* background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4) ),url("/img/pexels-pixabay-459653.jpg");  */
     
     background-repeat: no-repeat;
     background-position:center;
@@ -321,6 +321,7 @@ body {
     font-family: 'Fira Sans', sans-serif!important;
     display: flex;
     flex-direction: column;
+    
     
 }
     
