@@ -318,6 +318,8 @@ body {
     border-radius: 6px;
     width: 100%;
     max-width: 800px;
+    height: 100%;
+    border: thin solid red;
     margin: 25px auto;
     margin-top: 100px;
     transition: all 0.4s ease-in-out;
@@ -1282,7 +1284,7 @@ textarea:focus {
 
 }
 
-@media (max-width: 414px) {
+@media (min-width: 375px) and (max-width: 414px) {
 
     .navbar,
     .footer {
@@ -1334,6 +1336,27 @@ textarea:focus {
         text-align: center;
     }
 
+    
+
+    .skills-links {
+
+        border-radius: 6px;
+        width: 100%;
+        max-width: 375px;
+        margin: 25px auto;
+        margin-top: 100px;
+        transition: all 0.4s ease-in-out;
+        display: flex;
+        flex-direction: row;
+        
+        /* justify-content: space-around; */
+    }
+
+    .grid-skills {
+        font-size: 12px;
+    }
+    
+
     .form-container {
         width: 100%;
         max-width: 400px;
@@ -1370,7 +1393,7 @@ textarea:focus {
 
 }
 
-@media (max-width: 375px) {
+/* @media (max-width: 375px) {
 
     .navbar,
     .footer {
@@ -1454,4 +1477,4 @@ textarea:focus {
     text-align: center;
 }
 
-}
+} */
