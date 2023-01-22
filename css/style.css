@@ -184,14 +184,15 @@ body {
     padding: 23px;
     text-align: center;
     bottom: 50px;
-    right: 100px;
+    right: 25px;
     z-index: 1;
 
 }
 
 .arrow-top .fas:hover {
-    background-color: #fff;
-    color: #000000;
+    
+    color: #ffffff;
+    background-color: #202327;
 
 }
 
@@ -221,6 +222,7 @@ body {
     border-radius: 50px;
     padding-top: 100px;
     padding-bottom: 100px;
+    height: 100vh;
     background: url('/img/pexels-la-miko-3616773.jpg');
     background-position:bottom;
     background-size: cover;
@@ -288,6 +290,7 @@ content: "\2022 ";
     gap: 25px;
     text-align: center;
     padding-top: 50px;
+    height: 100vh;
 }
 
 
@@ -446,6 +449,8 @@ form {
     border-radius: 10px;
     background-color: #1a191d;
     border: thin solid #1a191d;
+    
+    
 }
 
 ::placeholder {
@@ -454,8 +459,6 @@ form {
 
 
 .container-md {
-    padding-top: 150px;
-    padding-bottom: 150px;
     height: 100vh;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
@@ -470,10 +473,12 @@ form {
     /* background-color: ; */
     background-position: center;
     background-size: contain;
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items:initial;
+    align-items:initial; */
+    padding-bottom: 150px;
+    
 }
 
 .form-left,
@@ -546,12 +551,11 @@ textarea:focus {
 
 
 .footer {
-    margin-top: 120px;
+    margin-top: 300px;
     width: 100%;
-    margin: auto;
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     background-color: #1a191d;
 }
 
@@ -692,39 +696,7 @@ textarea:focus {
         /* gap: 25px; */
     }
 
-    .form-container {
-        width: 100%;
-        max-width: 1000px;
-        margin: auto;
-        height: 600px;
-        border-radius: 50px;
-        margin: 150px auto;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    }
 
-    .form-control {
-        width: 600px;
-        background-color: transparent;
-    }
-
-    .contact-form {
-    
-        display: flex;
-        flex-direction: column ;
-        align-items: center;
-    }
-
-  
-
-.alert-success,
-.alert-danger {
-    display: none;
-    transition: all 0.2s ease-in-out;
-    width: 100%;
-    max-width: 500px;
-    margin: auto;
-    text-align: center;
-}
         
        
     
@@ -763,40 +735,7 @@ textarea:focus {
 
     }
 
-    .form-container {
-        width: 100%;
-        max-width: 824px;
-        margin: auto;
-        height: 600px;
-        border-radius: 50px;
-        margin: 150px auto;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    }
-
-    .form-control {
-        width: 400px;
-        background-color: transparent;
-    }
-
-    .contact-form {
     
-        display: flex;
-        flex-direction: column ;
-        align-items: center;
-    }
-
-  
-
-.alert-success,
-.alert-danger {
-    display: none;
-    transition: all 0.2s ease-in-out;
-    width: 100%;
-    max-width: 500px;
-    margin: auto;
-    text-align: center;
-}
-
     .footer {
         width: 100%;
 
@@ -943,43 +882,6 @@ textarea:focus {
 
     }
 
-
-   
-
-    .form-container {
-        width: 100%;
-        max-width: 500px;
-        margin: auto;
-        height: 600px;
-        border-radius: 50px;
-        margin: 150px auto;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    }
-
-    .form-control {
-        width: 375px;
-        background-color: transparent;
-    }
-
-    .contact-form {
-    
-        display: flex;
-        flex-direction: column ;
-        align-items: center;
-    }
-
-  
-
-.alert-success,
-.alert-danger {
-    display: none;
-    transition: all 0.2s ease-in-out;
-    width: 100%;
-    max-width: 500px;
-    margin: auto;
-    text-align: center;
-}
-
 }
 
 @media(max-width: 574px) {
@@ -1049,39 +951,7 @@ textarea:focus {
 
     
     
-    .form-container {
-        width: 100%;
-        max-width: 400px;
-        margin: auto;
-        height: 700px;
-        border-radius: 50px;
-        margin: 150px auto;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    }
 
-    .form-control {
-        width: 375px;
-        background-color: transparent;
-    }
-
-    .contact-form {
-    
-        display: flex;
-        flex-direction: column ;
-        align-items: center;
-    }
-
-  
-
-.alert-success,
-.alert-danger {
-    display: none;
-    transition: all 0.2s ease-in-out;
-    width: 100%;
-    max-width: 400px;
-    margin: auto;
-    text-align: center;
-}
 }
 
 @media (max-width: 480px) {
@@ -1115,39 +985,7 @@ textarea:focus {
 
     
 
-    .form-container {
-        width: 100%;
-        max-width: 400px;
-        margin: auto;
-        height: 700px;
-        border-radius: 50px;
-        margin: 150px auto;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    }
 
-    .form-control {
-        width: 375px;
-        background-color: transparent;
-    }
-
-    .contact-form {
-    
-        display: flex;
-        flex-direction: column ;
-        align-items: center;
-    }
-
-  
-
-.alert-success,
-.alert-danger {
-    display: none;
-    transition: all 0.2s ease-in-out;
-    width: 100%;
-    max-width: 400px;
-    margin: auto;
-    text-align: center;
-}
 
 }
 
@@ -1202,45 +1040,6 @@ textarea:focus {
     .desc {
         text-align: center;
     }
-
-    
-
-    
-    
-
-    .form-container {
-        width: 100%;
-        max-width: 400px;
-        margin: auto;
-        height: 700px;
-        border-radius: 50px;
-        margin: 150px auto;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    }
-
-    .form-control {
-        width: 340px;
-        background-color: transparent;
-    }
-
-    .contact-form {
-    
-        display: flex;
-        flex-direction: column ;
-        align-items: center;
-    }
-
-  
-
-.alert-success,
-.alert-danger {
-    display: none;
-    transition: all 0.2s ease-in-out;
-    width: 100%;
-    max-width: 340px;
-    margin: auto;
-    text-align: center;
-}
 
 }
 
