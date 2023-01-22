@@ -85,7 +85,7 @@
       <!-- Background image -->
       <div id="intro-example" class="p-5 text-center bg-image"
         style="background-image: url('./img/pexels-cottonbro-5083217.jpg');">
-        <div class="mask" style="background-color: rgba(0, 0, 0, 0.2);">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.1);backdrop-filter: blur(5px);">
           <div class="d-flex justify-content-center align-items-center h-100">
             <div class="text-white">
               <h1 class="mb-3" style="font-size: 36px;"><span>{</span>Hello, I'm <span
@@ -95,7 +95,7 @@
                         max-width: 600px;
                         margin: auto;
                         /* color: rgba(245, 18, 18, 0.842); */
-                        backdrop-filter: blur(15px);
+                        /* backdrop-filter: blur(15px); */
                         "></h2>
 
               <a class="btn btn-outline-danger btn-lg m-2" href="#portfolio-projects" role="button" rel="nofollow">View
@@ -561,14 +561,18 @@
         <div class="form-right">
           <div class="form-outline mb-4">
             <textarea class="form-control" id="message" rows="6" cols="40" placeholder="Message"></textarea>
-
           </div>
 
 
+
           <button type="submit" class="btn btn-primary btn-block mb-4" id="btn-form" onclick="sendEmail()">Send
-            Message</button>
+            Message
+          </button>
         </div>
 
+        <!-- <div class="alert alert-success">
+          <strong>Success!</strong> Indicates a successful or positive action.
+        </div> -->
 
       </form>
     </div>

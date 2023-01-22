@@ -12,7 +12,7 @@ const subject = document.getElementById('subject');
 const message = document.getElementById('message');
 const messageBtn = document.getElementById('btn-form');
 const form = document.querySelector('.contact-form');
-const errorElement = document.getElementById('error');
+
 
 
 
@@ -82,26 +82,25 @@ function sendEmail() {
         from_name: document.getElementById('name').value,
         email_id: document.getElementById('email_id').value,
         subject: document.getElementById('subject').value,
-        message: document.getElementById('message').value
+        message: document.getElementById('message').value,
+        
     }
 
-    emailjs.send("service_3xn8b0e", "template_f62n7ya", params).then(function (res) {
-        if (document.getElementById('name').value == "" && document.getElementById('email_id').value == "" && document.getElementById('subject').value == "" && document.getElementById('message').value == "") {
-            errorMessage.style.display = 'block'
-        } else {
+    emailjs.send("service_3xn8b0e", "template_8hedb59", params).then(function (res) {
+        
 
-            messageSent.style.display = 'block';
-        }
 
-        setTimeout(() => {
-            messageSent.style.display = 'none';
-            errorMessage.style.display = 'none'
-            email_id.value = "";
-            name.value = "";
-            subject.value = "";
-            message.value = "";
+        alert('Message sent' + res.status);
+        // successAlert.style.display = "block"
 
-        }, 3000)
+        // setTimeout(() => {
+            
+        //     email_id.value = "";
+        //     name.value = "";
+        //     subject.value = "";
+        //     message.value = "";
+
+        // }, 10000)
 
 
 

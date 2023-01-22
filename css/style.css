@@ -185,9 +185,9 @@ body {
     color: #fff;
     font-size: 15px;
     backdrop-filter: blur(15px);
-    padding: 23px;
+    padding: 10px;
     text-align: center;
-    bottom: 50px;
+    bottom: 10px;
     right: 10px;
     z-index: 1;
 }
@@ -378,7 +378,7 @@ li {
 }
 
 .nav-item button:hover {
-    color: #000000;
+    color: #ffffff;
     background: rgba(245, 18, 18, 0.842);
     transform: scale(0.98);
 }
@@ -517,12 +517,11 @@ textarea:focus {
 
 }
 
-.alert-success,
-.alert-danger {
+.alert {
     display: none;
     transition: all 0.2s ease-in-out;
     width: 100%;
-    max-width: 500px;
+    max-width: 300px;
     margin: auto;
     text-align: center;
 }
