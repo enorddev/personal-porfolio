@@ -39,12 +39,12 @@ function writeText() {
 // SIDE NAV
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
-    document.querySelector(".navbar-brand").style.visibility = "collapse";
+    document.querySelector(".navbar-brand").style.marginLeft = "-260px";
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.querySelector(".navbar-brand").style.visibility = "visible";
+    document.querySelector(".navbar-brand").style.marginLeft = "0";
 }
 
 
