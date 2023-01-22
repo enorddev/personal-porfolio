@@ -16,48 +16,61 @@
 
 <body>
   <div class="wrapper">
-    <div class="arrow-top pageUp">
-      <a href="#"><i class="fas fa-chevron-up"></i></a>
-    </div>
-
-
-    <section class="header" id="project-header">
-      <!-- NAVIGATION SECTION -->
-      <nav class="navbar active navbar-expand-lg ">
+    <header id="project-header">
+      <!-- Intro settings -->
+      <style>
+        /* Default height for small devices */
+        #intro-example {
+          height: 1000px;
+        }
+    
+        /* Height for devices larger than 992px */
+        @media (min-width: 992px) {
+          #intro-example {
+            height: 1000px;
+          }
+        }
+      </style>
+    
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-xxl navbar-light">
         <div class="container-fluid">
-          <span class="navbar-brand" href="#"><strong>Edwin Nord</strong><span
-              style="color: rgba(245, 18, 18, 0.842);">&nbsp;|&nbsp;</span><span
-              style="font-weight:300; color: rgb(0, 0, 0);">Web Developer</span></span>
+          <span class="navbar-brand" href="#" style="color: #fff;"><strong>Edwin Nord</strong><span
+            style="color: rgba(245, 18, 18, 0.842);">&nbsp;|&nbsp;</span><span
+            style="font-weight:300; color: rgb(255, 255, 255);">Web Developer</span></span>
           <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation"
             onclick="openNav()">
             <i class="fas fa-bars"></i>
           </button>
-
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-
-            <ul class="navbar-nav ms-auto justify-content-center mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.linkedin.com/in/edwin-nord-159884240/"><i
-                    class="fab fa-linkedin"></i></a>
+          
+          <div class="collapse navbar-collapse" id="navbarExample01">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="#project-header" style="color: #fff;">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://github.com/enorddev"><i class="fab fa-github"></i></a>
+                <a class="nav-link" href="#services-content" style="color: #fff;">What Do I Do?</a>
+              </li>
+              <li class="nav-item">
+                <a href="#skills-section" class="nav-link" style="color: #fff;">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a href="#portfolio-projects" class="nav-link" style="color: #fff;">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact-section" class="nav-link" style="color: #fff;">Contact</a>
               </li>
 
-              <li class="nav-item">
-                <a href="mailto:edwin.nord@gmail.com" class="nav-link"><i class="fa fa-envelope"></i></a>
-              </li>
             </ul>
           </div>
         </div>
       </nav>
 
-      <!-- NAVIGATION SECTION ENDS HERE -->
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#project-header">Home</a>
-        <a href="#skills-section">Skills</a>
         <a href="#services-content">What Do I Do?</a>
+        <a href="#skills-section">Skills</a>
         <a href="#portfolio-projects">Projects</a>
         <a href="#contact-section">Contact</a>
         <div class="side-nav-social">
@@ -67,64 +80,111 @@
           <a href="mailto:edwin.nord@gmail.com" class="nav-link"><i class="fa fa-envelope"></i></a>
         </div>
       </div>
+      <!-- Navbar -->
+    
+      <!-- Background image -->
+      <div
+        id="intro-example"
+        class="p-5 text-center bg-image"
+        style="background-image: url('./img/pexels-cottonbro-5083217.jpg');"
+      >
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.2);">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white">
+              <h1 class="mb-3"  style="font-size: 36px;"><span>{</span>Hello, I'm <span style="color: rgba(245, 18, 18, 0.842);">Edwin Nord</span><span>}</span></h1>
+              <h2 class="mb-4" id="text"
+                  style="
+                        width: 100%; 
+                        max-width: 600px;
+                        margin: auto;
+                        /* color: rgba(245, 18, 18, 0.842); */
+                        backdrop-filter: blur(15px);
+                        "
+                        ></h2>
+              
+              <a
+                class="btn btn-outline-danger btn-lg m-2"
+                href="#portfolio-projects"
+                role="button"
+                rel="nofollow"
+                
+              >View Projects</a
+              >
+              <a
+                class="btn btn-outline-danger btn-lg m-2"
+                href="https://drive.google.com/file/d/1LMGYyBnVycRBhYxxtFCw7VOMgTF-Q63M/view?usp=sharing"
+                target="_blank"
+                role="button"
+              >Download My CV &nbsp<i
+              class="fas fa-download" style="color: #fff;"></i></a
+              >
 
-
-
-      <!-- CONTAINER SECTION / BANNER   -->
-
-      <div class="container">
-
-        <div class="desc">
-          <h1 id="text"></h1>
-          <p>I'm a self-taught Web Developer who loves challenges, working hard, cares about writing clean code and is
-            an avid leaner. Highly motivated,
-            methodical, organised I always achieve my goals set for a project, through a critical spirit of initiative
-            and creativity,
-            always seek the best results for the company I work for. <a
-              href="https://www.linkedin.com/in/edwin-nord-159884240/">here</a>.</p>
-        </div>
-
-        <div class="project-btn">
-          <a href="https://github.com/enorddev?tab=repositories">
-            <button type="button" class="btn btn-lg btn-outline-light" data-mdb-ripple-color="dark"><span
-                style="color: rgba(245, 18, 18, 0.842) ;"><strong>
-                  <</strong></span> View Projects <span
-                style="color: rgba(245, 18, 18, 0.842) ;"><strong>/></strong></span></button>
-          </a>
-
-          <a href="https://drive.google.com/file/d/1LMGYyBnVycRBhYxxtFCw7VOMgTF-Q63M/view?usp=sharing" download>
-            <button type="button" class="btn btn-lg btn-outline-light" id="resume" data-mdb-ripple-color="dark"><span
-                style="color: rgba(255, 255, 255, 0.842) ;"><strong>
-                  <</strong></span> DOWNLOAD MY CV <span
-                style="color: rgba(255, 255, 255, 0.842) ;"><strong>/></strong></span>&nbsp;&nbsp<i
-                class="fas fa-download"></i></button>
-          </a>
-        </div>
-        <div class="arrow bounce">
-          <!-- <a class="fa fa-arrow-down fa-2x" href="#"></a> -->
-          <a href="#skills-section" class="bounce-link">Learn more about what I do<i class="fas fa-angle-double-down"
-              id="down-arrow"></i></a>
+              <div class="arrow bounce">
+                <a href="#services-content" class="bounce-link">Learn more about what I do<i class="fas fa-angle-double-down"
+                    id="down-arrow"></i></a>
+              </div>  
+            </div>
+          </div>
         </div>
       </div>
+    </header>
+      
+      
+     <!-- SERVICES SECTION -->
 
+      <div class="services" id="services-content">
+        <h1 class="service-title move">What Do I Do?</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-md web scroll">
+              <span style="color: rgba(245, 18, 18, 0.842); font-size:2rem;">
+                <>
+              </span>
+              <h3>Front End Development</h3>
+              <h6>I use HTML, CSS and Javascript to build attractive responsive websites <br>
+                   and web apps. See my front end work in the projects section.
+              </h6>
+              
+            </div>
+            
+            <div class="col-md landing scroll">
+              <span style="color: rgba(245, 18, 18, 0.842); font-size:2rem;">
+                <>
+              </span>
+              <h3>Landing Pages</h3>
+              <h6>Capture leads for your business. Send your subscribers <br>
+                   to a dedicated page.</h6>
+            </div>
+            
+            <div class="col-md email scroll">
+              <span style="color: rgba(245, 18, 18, 0.842); font-size:2rem;">
+                <>
+              </span>
+              <h3>HTML Email Development</h3>
+              <h6>Professional HTML emails. Clean code structure<br>and layout responsiveness.</h6>
+              
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+            
+            
+        
 
-      <!-- CONTAINER SECTION ENDS HERE -->
+      <!-- SERVICES SECTION ENDS HERE -->
 
-    </section>
-
-
-
-    <section class="section-content">
-
-      <div class="skills move" id="skills-section">
-        <h1>Skills</h1>
-
-        <div class="skills-links container-fluid ">
-          <div class="grid-skills " id="coding-skills">
-
-            <h4 class="h"><i class="fas fa-code" style="color: rgba(245, 18, 18, 0.842)"></i>&nbsp Computer Skills</h4>
-            <hr style="color: rgba(245, 18, 18, 0.842);width: 175px;">
-            <ul>
+      <div class="container-xxl" id="skills-section">
+        <div class="skills move" >
+          <h1>Skills</h1>
+        </div>
+          
+        <div class="grid">
+          <div class="g-col-6 g-col-md-4">
+            <h3><i class="fas fa-code" style="color: rgba(245, 18, 18, 0.842)"></i>&nbsp Computer Skills</h3>
+            <hr style="color: rgba(245, 18, 18, 0.842);width: 250px;">
+            <ul class="skills-list">
               <li>Html 5</li>
               <li>Css 3/SASS</li>
               <li>JavaScript / j Query / J SON</li>
@@ -142,13 +202,12 @@
             </ul>
           </div>
 
-          <!-- <div class="divider"></div> -->
+          
 
-
-          <div class="grid-skills" id="software-skills">
-            <h4 class="h4"><i class="fas fa-laptop-code" style="color: rgba(245, 18, 18, 0.842)"></i>&nbsp Software</h4>
-            <hr style="color: rgba(245, 18, 18, 0.842); width: 175px; ">
-            <ul>
+          <div class="g-col-6 g-col-md-4">
+            <h3><i class="fas fa-laptop-code"style="color: rgba(245, 18, 18, 0.842)"></i>&nbsp Software</h3>
+            <hr style="color: rgba(245, 18, 18, 0.842); width: 250px;">
+            <ul class="skills-list">
               <li>VS Code</li>
               <li>Slack</li>
               <li>Jira</li>
@@ -158,41 +217,9 @@
               <li>Github Desktop</li>
             </ul>
           </div>
-
-          <hr>
         </div>
       </div>
       <!-- SKILLS SECTION ENDS HERE -->
-
-
-      <!-- SERVICES SECTION -->
-
-      <div class="services" id="services-content">
-        <h1 class="service-title move">What Do I Do?</h1>
-        <div class="services-content">
-          <div class="email scroll">
-            <span style="color: rgba(245, 18, 18, 0.842); font-size:2rem;">
-              <>
-            </span>
-            <h3>HTML Email Development</h3>
-            <p>Professional HTML emails. Clean code structure with responsive layout.
-              Email testing using Litmus & Putsmail.
-            </p>
-          </div>
-
-          <div class="web scroll">
-            <span style="color: rgba(245, 18, 18, 0.842); font-size:2rem;">
-              <>
-            </span>
-            <h3>Web Development</h3>
-            <p>Build fully responsive website and web apps using efficient code and best practices.
-              Create website layout/user interface by using standard HTML/CSS , Javascript & PHP practices.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- SERVICES SECTION ENDS HERE -->
 
 
       <!-- PROJECTS SECTION -->
@@ -513,8 +540,8 @@
       </div>
 
       <!-- PROJECTS SECTION ENDS HERE -->
-      <div class="form-container" id="contact-section">
-          
+      <div class="container-md" id="contact-section">
+        <h1>Contact</h1>
         <form class="contact-form" >
           <div class="form-left">
             <div class="form-floating mb-4">
@@ -561,10 +588,20 @@
       <!-- FOOTER SECTION -->
 
       <div class="footer">
+        <div class="arrow-top pageUp">
+          <a href="#"><i class="fas fa-chevron-up"></i></a>
+        </div>
         <div class="footer-content">
-          <div class="copyright">
-            <span>Copyright © 2022 Edwin Nord • Web Developer</span>
+          <div class="footer-social">
+            <a class="nav-link" href="https://www.linkedin.com/in/edwin-nord-159884240/"><i
+              class="fab fa-linkedin"></i></a>
+            <a class="nav-link" href="https://github.com/enorddev"><i class="fab fa-github"></i></a>
+            <a href="mailto:edwin.nord@gmail.com" class="nav-link"><i class="fa fa-envelope"></i></a>
           </div>
+          <div class="copyright">
+            <span style="font-weight: 300; letter-spacing: 1.5px;">Edwin Nord<span style="color: rgba(245, 18, 18, 0.842);"> ©2022</span></span>
+          </div>
+          
         </div>
       </div>
     </section>

@@ -14,7 +14,8 @@ const messageBtn = document.getElementById('btn-form');
 const messageSent = document.querySelector('.alert');
 const errorMessage = document.querySelector('.alert-danger')
 const form = document.querySelector('.contact-form');
-const errorElement = document.getElementById('error')
+const errorElement = document.getElementById('error');
+
 
 
 // REMOVE ACTIVE CLASS ON LOAD //
@@ -25,7 +26,7 @@ window.addEventListener('load', () => {
 window.addEventListener('scroll', fixedNav);
 
 function fixedNav() {
-    if(window.scrollY > nav.offsetHeight + 370) {
+    if(window.scrollY > nav.offsetHeight + 170) {
         nav.classList.add('active');
         emailSection.classList.add('scroll');
         webSection.classList.add('scroll');
@@ -44,10 +45,12 @@ function fixedNav() {
 
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
+    document.querySelector(".navbar-brand").style.marginLeft = "500px";
   }
   
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
+    document.querySelector(".navbar-brand").style.marginLeft = "0";
   }
 
 
@@ -63,7 +66,8 @@ function openNav() {
 // AUTO TEXT EFFECT //
 
 const textEl = document.getElementById('text')
-const text = "<Hi, I'm Edwin./>"
+const textTwo = document.getElementById('textTwo')
+const text = "<Front-end Web Developer/>"
 
 let textIdx = 0;
 writeText();
@@ -75,7 +79,7 @@ function writeText() {
     if(textIdx > text.length) {
         textIdx = text.value.innerText
     }
-    setTimeout(writeText, 160)
+    setTimeout(writeText, 75)
 }
 
 
