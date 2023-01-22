@@ -1,4 +1,4 @@
-const nav = document.querySelector('.navbar'); 
+const nav = document.querySelector('.navbar');
 const arrowBtn = document.getElementById('down-arrow');
 const emailSection = document.querySelector('.email');
 const webSection = document.querySelector('.web');
@@ -11,54 +11,8 @@ const messageEmail = document.getElementById('email_id');
 const subject = document.getElementById('subject');
 const message = document.getElementById('message');
 const messageBtn = document.getElementById('btn-form');
-const messageSent = document.querySelector('.alert');
-const errorMessage = document.querySelector('.alert-danger')
 const form = document.querySelector('.contact-form');
 const errorElement = document.getElementById('error');
-
-
-
-// REMOVE ACTIVE CLASS ON LOAD //
-window.addEventListener('load', () => {
-    nav.classList.remove('active')
-});
-
-window.addEventListener('scroll', fixedNav);
-
-function fixedNav() {
-    if(window.scrollY > nav.offsetHeight + 170) {
-        nav.classList.add('active');
-        emailSection.classList.add('scroll');
-        webSection.classList.add('scroll');
-        serviceAnimation.classList.add('move');
-        skills.classList.add('move');
-        arrowTop.classList.remove('pageUp');
-    } else {
-        nav.classList.remove('active');
-        emailSection.classList.remove('scroll');
-        webSection.classList.remove('scroll');
-        serviceAnimation.classList.remove('move');
-        skills.classList.remove('move');
-        arrowTop.classList.add('pageUp');
-    }
-}
-
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.querySelector(".navbar-brand").style.marginLeft = "500px";
-  }
-  
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.querySelector(".navbar-brand").style.marginLeft = "0";
-  }
-
-
-
-
-
-
-
 
 
 
@@ -76,18 +30,53 @@ function writeText() {
     textEl.innerText = text.slice(0, textIdx)
     textIdx++
 
-    if(textIdx > text.length) {
+    if (textIdx > text.length) {
         textIdx = text.value.innerText
     }
-    setTimeout(writeText, 75)
+    setTimeout(writeText, 50)
+}
+
+// SIDE NAV
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.querySelector(".navbar-brand").style.visibility = "collapse";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.querySelector(".navbar-brand").style.visibility = "visible";
+}
+
+
+
+
+// REMOVE ACTIVE CLASS ON LOAD //
+window.addEventListener('load', () => {
+    nav.classList.remove('active')
+});
+
+window.addEventListener('scroll', fixedNav);
+
+function fixedNav() {
+    if (window.scrollY > nav.offsetHeight + 170) {
+        nav.classList.add('active');
+        emailSection.classList.add('scroll');
+        webSection.classList.add('scroll');
+
+    } else {
+        nav.classList.remove('active');
+        emailSection.classList.remove('scroll');
+        webSection.classList.remove('scroll');
+
+    }
 }
 
 
 // FORM //
 
 function sendEmail() {
-    
-    
+
+
 
     const params = {
         from_name: document.getElementById('name').value,
@@ -97,30 +86,43 @@ function sendEmail() {
     }
 
     emailjs.send("service_3xn8b0e", "template_f62n7ya", params).then(function (res) {
-        if(document.getElementById('name').value == "" && document.getElementById('email_id').value == "" && document.getElementById('subject').value == "" && document.getElementById('message').value == ""  ) {
+        if (document.getElementById('name').value == "" && document.getElementById('email_id').value == "" && document.getElementById('subject').value == "" && document.getElementById('message').value == "") {
             errorMessage.style.display = 'block'
         } else {
 
             messageSent.style.display = 'block';
         }
-        
+
         setTimeout(() => {
-                messageSent.style.display = 'none';
-                errorMessage.style.display = 'none'
-                email_id.value = "";
-                name.value = "";
-                subject.value = "";
-                message.value = "";
-    
-            }, 3000)
-        
-        
+            messageSent.style.display = 'none';
+            errorMessage.style.display = 'none'
+            email_id.value = "";
+            name.value = "";
+            subject.value = "";
+            message.value = "";
+
+        }, 3000)
+
+
 
     })
 
 }
 
-       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
