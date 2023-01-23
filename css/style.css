@@ -193,8 +193,8 @@ body {
 }
 
 .arrow-top .fas:hover {
-    color: #ffffff;
-    background-color: #202327;
+    color: #000000;
+    background-color: #ffffff;
 }
 
 
@@ -213,10 +213,10 @@ body {
 
 
 .container-xl {
-    margin-top: 300px;
+    /* margin-top: 300px; */
     border-radius: 50px;
-    padding-top: 100px;
-    padding-bottom: 150px;
+    padding-top: 170px;
+    padding-bottom: 170px;
     height: 1000px;
     background: url('/img/pexels-la-miko-3616773.jpg');
     background-position: bottom;
@@ -311,8 +311,8 @@ li {
 /* PROJECT SECTION */
 
 .projects {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 170px;
+    padding-bottom: 170px;
     text-align: center;
 
 }
@@ -411,13 +411,37 @@ li {
 
 
 /* CONTACT FORM */
+.container-md {
+    padding-top: 170px;
+    padding-bottom: 170px;
+    height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+.contact-form {
+    background-image: url("/img/pexels-la-miko-3616773.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.container-md h1 {
+    letter-spacing: 5px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: rgba(245, 18, 18, 0.842);
+    text-underline-offset: 12px;
+    padding-bottom: 50px;
+    
+}
 
 form {
     border-radius: 10px;
     background-color: #1a191d;
     border: thin solid #1a191d;
-
-
 }
 
 ::placeholder {
@@ -425,25 +449,6 @@ form {
 }
 
 
-.container-md {
-    height: 100vh;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
-
-
-.form-title {
-    text-align: center;
-}
-
-.contact-form {
-    background-image: url("/img/pexels-la-miko-3616773.jpg");
-    background-position: center;
-    background-size: cover;
-    padding-bottom: 150px;
-    width: 100%;
-    max-width: 400px;
-    margin: auto;
-}
 
 .form-left,
 .form-right {
@@ -460,16 +465,7 @@ form {
 }
 
 
-.container-md h1 {
-    letter-spacing: 5px;
-    color: #ffffff;
-    text-align: center;
-    text-decoration: underline;
-    text-decoration-color: rgba(245, 18, 18, 0.842);
-    text-underline-offset: 12px;
-    padding-top: 125px;
-    padding-bottom: 125px;
-}
+
 
 textarea {
     resize: none;
@@ -509,8 +505,12 @@ textarea:focus {
 /* FOOTER SECTION */
 
 
+footer {
+    padding-top: 170px;
+}
+
 .footer {
-    margin-top: 400px;
+    /* margin-top: 400px; */
     width: 100%;
     text-align: center;
     padding-top: 25px;
