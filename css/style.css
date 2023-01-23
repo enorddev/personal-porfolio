@@ -169,9 +169,9 @@ body {
 }
 
 .bounce {
-    -moz-animation: bounce 3s infinite;
-    -webkit-animation: bounce 3s infinite;
-    animation: bounce 3s infinite;
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
 }
 
 
@@ -304,28 +304,6 @@ li {
     transform: scale(0.96);
 }
 
-/* .service-title.move,
-.skills.move,
-.landing.scroll {
-    animation-duration: 1s;
-    position: relative;
-    animation-name: movedown;
-}
-
-.email.scroll,
-.card.hover {
-    animation-name: moveInleft;
-    animation-duration: 1s;
-    position: relative;
-
-}
-
-.web.scroll {
-    animation-name: moveInRight;
-    animation-duration: 1s;
-    position: relative;
-
-} */
 
 /* SERVICES SECTION ENDS HERE */
 
@@ -430,9 +408,9 @@ li {
 /*PROJECT SECTION ENDS HERE */
 
 
+
+
 /* CONTACT FORM */
-
-
 
 form {
     border-radius: 10px;
@@ -532,7 +510,7 @@ textarea:focus {
 
 
 .footer {
-    margin-top: 300px;
+    margin-top: 400px;
     width: 100%;
     text-align: center;
     padding-top: 25px;
