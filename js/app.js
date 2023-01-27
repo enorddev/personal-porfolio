@@ -17,7 +17,7 @@ const form = document.querySelector('.contact-form');
 
 const textEl = document.getElementById('text')
 const textTwo = document.getElementById('textTwo')
-const text = "<Front-end Web Developer/>"
+const text = "{Front-end Web Developer}"
 
 let textIdx = 0;
 writeText();
@@ -35,7 +35,7 @@ function writeText() {
 // SIDE NAV
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
-    document.querySelector(".navbar-brand").style.marginLeft = "-260px";
+    document.querySelector(".navbar-brand").style.marginLeft = "-280px";
 }
 
 function closeNav() {
@@ -67,8 +67,35 @@ function fixedNav() {
     }
 }
 
+function sendEmail() {
 
-// FORM //
+
+
+    const params = {
+        from_name: document.getElementById('name').value,
+        email_id: document.getElementById('email_id').value,
+        subject: document.getElementById('subject').value,
+        message: document.getElementById('message').value,
+
+    }
+
+
+    emailjs.send("service_3xn8b0e", "template_8hedb59", params).then(function (res) {
+
+
+
+        document.querySelector('.alert').style.zIndex = '1'
+
+        setTimeout(() => {
+            document.querySelector('.alert').style.zIndex = '-1'
+            email_id.value = "";
+            name.value = "";
+            subject.value = "";
+            message.value = "";
+
+        }, 4000)
+    })
+}
 
 
 
