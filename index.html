@@ -15,29 +15,28 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="container-fluid wrapper ">
     <header id="project-header">
-      <!-- Intro settings -->
+
       <style>
-        /* Default height for small devices */
         #intro-example {
-          height: 1000px;
+          height: 800px;
         }
 
         /* Height for devices larger than 992px */
         @media (min-width: 992px) {
           #intro-example {
-            height: 1000px;
+            height: 800px;
           }
         }
       </style>
 
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-xxl navbar-light">
+      <nav class="navbar navbar-expand-xl navbar-light">
         <div class="container-fluid">
           <span class="navbar-brand" href="#" style="color: #fff;"><strong>Edwin Nord</strong><span
               style="color: rgba(245, 18, 18, 0.842);">&nbsp;|&nbsp;</span><span
-              style="font-weight:300; color: rgb(255, 255, 255);">Web Developer</span></span>
+              style="font-weight:300; color:rgb(255, 255, 255);">Web Developer</span></span>
           <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation"
             onclick="openNav()">
             <i class="fas fa-bars"></i>
@@ -60,6 +59,13 @@
               <li class="nav-item">
                 <a href="#contact-section" class="nav-link" style="color: #fff;">Contact</a>
               </li>
+              <li class="nav-item">
+                <a href="https://www.linkedin.com/in/edwin-nord-159884240/" class="nav-link"
+                  style="color: #fff;">linkedin</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://github.com/enorddev" class="nav-link" style="color: #fff;">Github</a>
+              </li>
 
             </ul>
           </div>
@@ -77,130 +83,153 @@
           <a class="nav-link" href="https://www.linkedin.com/in/edwin-nord-159884240/"><i
               class="fab fa-linkedin"></i></a>
           <a class="nav-link" href="https://github.com/enorddev"><i class="fab fa-github"></i></a>
-          <a href="mailto:edwin.nord@gmail.com" class="nav-link"><i class="fa fa-envelope"></i></a>
         </div>
+
       </div>
       <!-- Navbar -->
 
       <!-- Background image -->
       <div id="intro-example" class="p-5 text-center bg-image"
         style="background-image: url('./img/pexels-cottonbro-5083217.jpg');">
-        <div class="mask" style="background-color: rgba(0, 0, 0, 0.1);backdrop-filter: blur(5px);">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0);">
           <div class="d-flex justify-content-center align-items-center h-100">
             <div class="text-white">
-              <h1 class="mb-3" style="font-size: 36px;"><span>{</span>Hello, I'm <span
-                  style="color: rgba(245, 18, 18, 0.842);">Edwin Nord</span><span>}</span></h1>
+              <h1 class="mb-3" style="font-size: 1.5rem; color: #1a191d; backdrop-filter: blur(20px); ">
+                <span>{</span>Hello, I'm <span style="color: rgba(245, 18, 18, 0.842);">Edwin Nord</span><span>}</span>
+              </h1>
               <h2 class="mb-4" id="text" style="
                         width: 100%; 
                         max-width: 600px;
                         margin: auto;
-                        /* color: rgba(245, 18, 18, 0.842); */
-                        /* backdrop-filter: blur(15px); */
+                        color: #000000;
+                        backdrop-filter: blur(20px); 
+                        
                         "></h2>
 
-              <a class="btn btn-outline-danger btn-lg m-2" href="#portfolio-projects" role="button" rel="nofollow">View
-                Projects</a>
-              <a class="btn btn-outline-danger btn-lg m-2"
-                href="https://drive.google.com/file/d/1LMGYyBnVycRBhYxxtFCw7VOMgTF-Q63M/view?usp=sharing"
-                target="_blank" role="button">Download My CV &nbsp<i class="fas fa-download"
-                  style="color: #fff;"></i></a>
+
+              <button class="learn-more">
+                <span class="circle" aria-hidden="true">
+                  <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">
+                  <a href="#portfolio-projects" role="button" rel="nofollow">View
+                    Projects</a>
+                </span>
+              </button>
+
+              <button class="learn-more">
+                <span class="circle" aria-hidden="true">
+                  <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">
+                  <a href="https://drive.google.com/file/d/1LMGYyBnVycRBhYxxtFCw7VOMgTF-Q63M/view?usp=sharing"
+                    target="_blank" role="button">My Resume &nbsp<i class="fas fa-download"
+                      style="color: rgb(0, 0, 0);"></i></a>
+                </span>
+              </button>
 
               <div class="arrow bounce">
-                <a href="#services-content" class="bounce-link">Learn more about what I do<i
-                    class="fas fa-angle-double-down" id="down-arrow"></i></a>
+                <a href="#services-content" class="bounce-link">
+                  <i class="fas fa-angle-double-down" id="down-arrow" style="color: rgb(0, 0, 0);">
+                  </i>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </header>
+    <!-- HEADER ENDS HERE -->
+
+
 
 
     <!-- SERVICES SECTION -->
 
     <div class="services" id="services-content">
-      <h1 class="service-title move">What Do I Do?</h1>
-      <div class="container">
+      <h2 class="service-title move">What Do I Do?</h2>
+      <div class="container-fluid container-services">
         <div class="row">
+
           <div class="col-md web scroll">
-            <span style="color: rgba(245, 18, 18, 0.842); font-size:2rem;">
-              <>
+            <span>
+              <i class="fas fa-code"></i>
             </span>
-            <h3>Front End Development</h3>
-            <h6>I use HTML, CSS and Javascript to build attractive responsive websites <br>
+            <h4>Front End Development</h4>
+            <h6>I use HTML, CSS and Javascript to build attractive responsive websites
               and web apps. See my front end work in the projects section.
             </h6>
-
           </div>
 
           <div class="col-md landing scroll">
-            <span style="color: rgba(245, 18, 18, 0.842); font-size:2rem;">
-              <>
+            <span>
+              <i class="fas fa-cogs"></i>
             </span>
-            <h3>Landing Pages</h3>
-            <h6>Capture leads for your business. Send your subscribers <br>
+            <h4>Landing Pages</h4>
+            <h6>Capture leads for your business. Send your subscribers
               to a dedicated page.</h6>
           </div>
 
           <div class="col-md email scroll">
-            <span style="color: rgba(245, 18, 18, 0.842); font-size:2rem;">
-              <>
+            <span>
+              <i class="fas fa-at"></i>
             </span>
-            <h3>HTML Email Development</h3>
-            <h6>Professional HTML emails. Clean code structure<br>and layout responsiveness.</h6>
-
+            <h4>HTML Email Development</h4>
+            <h6>Professional HTML emails. Clean code structure and layout responsiveness.</h6>
           </div>
+
         </div>
 
-
       </div>
+
     </div>
+
 
 
 
 
     <!-- SERVICES SECTION ENDS HERE -->
 
-    <div class="container-xl" id="skills-section">
+    <div class="container-fluid" id="skills-section">
       <div class="skills move">
-        <h1>Skills</h1>
+        <h2>Skills</h2>
       </div>
 
-      <div class="grid">
-        <div class="g-col-6 g-col-md-4">
+      <div class="grid skills-flex">
+        <div class="g-col-6">
           <h3><i class="fas fa-code" style="color: rgba(245, 18, 18, 0.842)"></i>&nbsp Computer Skills</h3>
           <hr style="color: rgba(245, 18, 18, 0.842);width: 250px;">
-          <ul class="skills-list">
-            <li>Html 5</li>
-            <li>Css 3/SASS</li>
-            <li>JavaScript / j Query / J SON</li>
-            <li>Bootstrap 5</li>
-            <li>React</li>
-            <li>Flexbox</li>
-            <li>Php</li>
-            <li>WordPress</li>
-            <li>Litmus</li>
-            <li>Rest API knowledge</li>
-            <li>NodeJS</li>
-            <li>NPN</li>
-            <li>Responsive Web Design</li>
-            <li>Git, GitHub</li>
+          <ul class="list-group list-group-light skills-list">
+            <li class="list-group-item">Html 5</li>
+            <li class="list-group-item">Css 3/SASS</li>
+            <li class="list-group-item">JavaScript / j Query / J SON</li>
+            <li class="list-group-item">Bootstrap 5</li>
+            <li class="list-group-item">React</li>
+            <li class="list-group-item">Flexbox</li>
+            <li class="list-group-item">Php</li>
+            <li class="list-group-item">WordPress</li>
+            <li class="list-group-item">Litmus</li>
+            <li class="list-group-item">Rest API knowledge</li>
+            <li class="list-group-item">NodeJS</li>
+            <li class="list-group-item">NPN</li>
+            <li class="list-group-item">Responsive Web Design</li>
+            <li class="list-group-item">Git, GitHub</li>
           </ul>
         </div>
 
 
 
-        <div class="g-col-6 g-col-md-4">
+        <div class="g-col-6">
           <h3><i class="fas fa-laptop-code" style="color: rgba(245, 18, 18, 0.842)"></i>&nbsp Software</h3>
           <hr style="color: rgba(245, 18, 18, 0.842); width: 250px;">
-          <ul class="skills-list">
-            <li>VS Code</li>
-            <li>Slack</li>
-            <li>Jira</li>
-            <li>Outlook</li>
-            <li>Figma</li>
-            <li>phpMyAdmin</li>
-            <li>Github Desktop</li>
+          <ul class="list-group list-group-light skills-list">
+            <li class="list-group-item">VS Code</li>
+            <li class="list-group-item">Slack</li>
+            <li class="list-group-item">Jira</li>
+            <li class="list-group-item">Outlook</li>
+            <li class="list-group-item">Figma</li>
+            <li class="list-group-item">phpMyAdmin</li>
+            <li class="list-group-item">Github Desktop</li>
           </ul>
         </div>
       </div>
@@ -212,321 +241,145 @@
     <div class="projects" id="portfolio-projects">
       <div class="projects-content">
         <div class="project-title">
-          <h1>Latest Projects</h1>
+          <h2>Latest Projects</h2>
         </div>
         <div class="project-links">
           <div class="project-menu">
-            <ul class="nav nav-tabs mb-3 justify-content-center" id="pills-tab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="btn-outline-light" id="home-tab0" data-mdb-toggle="tab" data-mdb-target="#home0"
-                  type="button" role="tab" aria-controls="home" aria-current="page" aria-selected="true">
-                  All
-                </button>
-              </li>
-
-              <li class="nav-item" role="presentation">
-                <button class="btn-outline-light" id="profile-tab0" data-mdb-toggle="tab" data-mdb-target="#profile0"
-                  type="button" role="tab" aria-controls="profile" aria-selected="false">
-                  Email Development
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="btn-outline-light" id="contact-tab0" data-mdb-toggle="tab" data-mdb-target="#contact0"
-                  type="button" role="tab" aria-controls="contact" aria-selected="false">
-                  Web Development
-                </button>
-              </li>
-            </ul>
-            <div class="tab-content" id="myTabContent0">
-              <div class="tab-pane fade show active" id="home0" role="tabpanel" aria-labelledby="home-tab0">
-                <div class="grid">
-                  <div class="g-col-6  g-col-md-4">
-                    <div class="card hover" style="width: 20rem;">
-                      <img src="/img/projects img/CaptureMemory game.JPG" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Simple React Memory App</h5>
-                        <p class="card-text">Web Development</p>
-                        <a href="https://benevolent-begonia-6e59ef.netlify.app/" class="btn">Live Demo&nbsp;<span><i
-                              class="fas fa-chevron-circle-right"></i></span></a>
-                        <a href="https://github.com/enorddev/memory-app.git" class="btn">View Code&nbsp;<span><i
-                              class="fas fa-chevron-circle-right"></i></span></a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="g-col-6  g-col-md-4">
-                    <div class="card hover" style="width: 20rem;">
-                      <img src="/img/projects img/sneakers.JPG" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">React E-commerce Product Page</h5>
-                        <p class="card-text">Web Development</p>
-                        <a href="https://splendid-trifle-36aaad.netlify.app/" class="btn">Live Demo&nbsp;<span><i
-                              class="fas fa-chevron-circle-right"></i></span></a>
-                        <a href="https://github.com/enorddev/react-ecommerce-app.git" class="btn">View
-                          Code&nbsp;<span><i class="fas fa-chevron-circle-right"></i></span></a>
-                      </div>
-                    </div>
-                  </div>
-
-
-
-                  <div class="g-col-6  g-col-md-4">
-                    <div class="card hover" style="width: 20rem;">
-                      <img src="/img/projects img/yelp.JPG" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">YelpCamp Website </h5>
-                        <p class="card-text">Web Development</p>
-                        <a href="https://moonlit-selkie-dff7fc.netlify.app/" class="btn">Live Demo&nbsp;<span><i
-                              class="fas fa-chevron-circle-right"></i></span></a>
-                        <a href="https://github.com/enorddev/YelpCamp-Project.git" class="btn">View Code&nbsp;<span><i
-                              class="fas fa-chevron-circle-right"></i></span></a>
-                      </div>
-                    </div>
-                  </div>
+            <div class="container projects-container">
+              <div class="row" id="projects-row">
+                <div class="col-md-4">
+                  <figure class="figure">
+                    <img src="/img/projects img/portfolio.png" class="figure-img img-fluid z-depth-1" alt="..."
+                      style="width: 350px">
+                    <figcaption class="figure-caption">Web Development</figcaption>
+                    <p class="h6">Portfolio Website</p>
+                    <button class="cta">
+                      <span class="hover-underline-animation"><a href="https://scintillating-dango-cdbd53.netlify.app/">
+                          View Demo </a></span>
+                      <i class="fas fa-long-arrow-alt-right" id="arrow-horizontal"></i>
+                    </button>
+                  </figure>
                 </div>
 
-                <div class="grid">
-                  <div class="g-col-6 g-col-md-4">
-                    <div class="card hover" style="width: 20rem;">
-                      <img src="/img/projects img/flowlab.JPG" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Flow Lab Newsletter Email </h5>
-                        <p class="card-text">Email Development</p>
-                        <a href="https://capable-cajeta-2c6296.netlify.app/" class="btn">Live Demo&nbsp;<span><i
-                              class="fas fa-chevron-circle-right"></i></span></a>
-                        <a href="https://github.com/enorddev/studio-flow-email.git" class="btn">View Code&nbsp;<span><i
-                              class="fas fa-chevron-circle-right"></i></span></a>
-                      </div>
-                    </div>
-                  </div>
-
-
-
-
-                  <div class="g-col-6 g-col-md-4">
-                    <div class="card hover" style="width: 20rem;">
-                      <img src="/img/projects img/franknoak.JPG" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Frank & Oak Email</h5>
-                        <p class="card-text">Email Development</p>
-                        <a href="https://resonant-biscochitos-122046.netlify.app/" class="btn">Live Demo&nbsp;<span><i
-                              class="fas fa-chevron-circle-right"></i></span></a>
-                        <a href="https://github.com/enorddev/Frank-And-Oak-Mock-Email.git" class="btn">View
-                          Code&nbsp;<span><i class="fas fa-chevron-circle-right"></i></span></a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="g-col-6 g-col-md-4">
-                    <div class="card hover" style="width: 20rem;">
-                      <img src="/img/projects img/Captureportfolio.JPG" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Portofolio Website</h5>
-                        <p class="card-text">Web Development</p>
-                        <a href="https://scintillating-dango-cdbd53.netlify.app/" class="btn">Live Demo&nbsp;<span><i
-                              class="fas fa-chevron-circle-right"></i></span></a>
-                        <a href="https://github.com/enorddev/personal-porfolio.git" class="btn">View Code&nbsp;<span><i
-                              class="fas fa-chevron-circle-right"></i></span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="grid">
-                  <div class="g-col-6 g-col-md-4">
-                    <div class="card hover" style="width: 20rem;">
-                      <img src="/img/projects img/travelagencycapture.JPG" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Travel Agency Email</h5>
-                        <p class="card-text">Email Development</p>
-                        <a href="https://flourishing-pothos-b563ce.netlify.app/" class="btn">Live Demo&nbsp;<span><i
-                              class="fas fa-chevron-circle-right"></i></span></a>
-                        <a href="https://github.com/enorddev/Travel-Agency-Email.git" class="btn">View
-                          Code&nbsp;<span><i class="fas fa-chevron-circle-right"></i></span></a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="g-col-6 g-col-md-4">
-                    <div class="card hover" style="width: 20rem;">
-                      <img src="/img/captures/agency.JPG" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Creative Agency Website </h5>
-                        <p class="card-text">Web Development Development</p>
-                        <a href="https://peaceful-bombolone-99e5ec.netlify.app/index.html" class="btn">Live
-                          Demo&nbsp;<span><i class="fas fa-chevron-circle-right"></i></span></a>
-                        <a href="https://github.com/enorddev/Creative-Agency-Website-Mock.git" class="btn">View
-                          Code&nbsp;<span><i class="fas fa-chevron-circle-right"></i></span></a>
-                      </div>
-                    </div>
-                  </div>
+                <div class="col-md-4">
+                  <figure class="figure">
+                    <img src="/img/projects img/creative_agency.png" class="figure-img img-fluid z-depth-1" alt="..."
+                      style="width: 350px">
+                    <figcaption class="figure-caption">Web Development</figcaption>
+                    <p class="h6">Creative Agency Website</p>
+                    <button class="cta">
+                      <span class="hover-underline-animation"><a href="https://peaceful-bombolone-99e5ec.netlify.app/">
+                          View Demo </a></span>
+                      <i class="fas fa-long-arrow-alt-right" id="arrow-horizontal"></i>
+                    </button>
+                  </figure>
                 </div>
 
 
-
+                <div class="col-md-4">
+                  <figure class="figure">
+                    <img src="/img/projects img/ecommerce.png" class="figure-img img-fluid z-depth-1" alt="..."
+                      style="width: 350px">
+                    <figcaption class="figure-caption">Web Development</figcaption>
+                    <p class="h6">E-commerce Product Page w/ React</p>
+                    <button class="cta">
+                      <span class="hover-underline-animation"><a href="https://splendid-trifle-36aaad.netlify.app/#">
+                          View Demo </a></span>
+                      <i class="fas fa-long-arrow-alt-right" id="arrow-horizontal"></i>
+                    </button>
+                  </figure>
+                </div>
               </div>
 
 
-              <div class="tab-pane fade" id="profile0" role="tabpanel" aria-labelledby="profile-tab0">
-                <div class="grid">
-                  <div class="g-col-6 hover g-col-md-4">
-                    <div class="card hover" style="width: 20rem;">
-                      <img src="/img/projects img/flowlab.JPG" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Flow Lab Newsletter Email </h5>
-                        <p class="card-text">Email Development</p>
-                        <a href="https://capable-cajeta-2c6296.netlify.app/" class="btn">Live Demo&nbsp;<span><i
-                              class="fas fa-chevron-circle-right"></i></span></a>
-                        <a href="https://github.com/enorddev/studio-flow-email.git" class="btn">View Code&nbsp;<span><i
-                              class="fas fa-chevron-circle-right"></i></span></a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="g-col-6 g-col-md-4">
-                    <div class="card hover" style="width: 20rem;">
-                      <img src="/img/projects img/franknoak.JPG" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Frank & Oak Email</h5>
-                        <p class="card-text">Email Development</p>
-                        <a href="https://resonant-biscochitos-122046.netlify.app/" class="btn">Live Demo&nbsp;<span><i
-                              class="fas fa-chevron-circle-right"></i></span></a>
-                        <a href="https://github.com/enorddev/Frank-And-Oak-Mock-Email.git" class="btn">View
-                          Code&nbsp;<span><i class="fas fa-chevron-circle-right"></i></span></a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="g-col-6 g-col-md-4">
-                    <div class="card hover" style="width: 20rem;">
-                      <img src="/img/projects img/travelagencycapture.JPG" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Travel Agency Email</h5>
-                        <p class="card-text">Email Development</p>
-                        <a href="https://flourishing-pothos-b563ce.netlify.app/" class="btn">Live Demo&nbsp;<span><i
-                              class="fas fa-chevron-circle-right"></i></span></a>
-                        <a href="https://github.com/enorddev/Travel-Agency-Email.git" class="btn">View
-                          Code&nbsp;<span><i class="fas fa-chevron-circle-right"></i></span></a>
-                      </div>
-                    </div>
-                  </div>
+              <div class="row" id="projects-row">
+                <div class="col-md-4">
+                  <figure class="figure">
+                    <img src="/img/projects img/ask_greguy.png" class="figure-img img-fluid z-depth-1" alt="..."
+                      style="width: 350px">
+                    <figcaption class="figure-caption">Web Development</figcaption>
+                    <p class="h6">Realtor Landing Page</p>
+                    <button class="cta">
+                      <span class="hover-underline-animation"><a
+                          href="https://deluxe-snickerdoodle-e30f35.netlify.app/"> View Demo </a></span>
+                      <i class="fas fa-long-arrow-alt-right" id="arrow-horizontal"></i>
+                    </button>
+                  </figure>
                 </div>
 
-                <div class="grid">
-                  <div class="g-col-6 g-col-md-4">
-                    <div class="card hover" style="width: 20rem;">
-                      <img src="/img/projects img/studiobinder.JPG" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Studio Binder Email </h5>
-                        <p class="card-text">Email Development</p>
-                        <a href="https://chic-rolypoly-4f8db9.netlify.app/" class="btn">Live Demo&nbsp;<span><i
-                              class="fas fa-chevron-circle-right"></i></span></a>
-                        <a href="https://github.com/enorddev/studio-binder-email.git" class="btn">View
-                          Code&nbsp;<span><i class="fas fa-chevron-circle-right"></i></span></a>
-                      </div>
-                    </div>
-                  </div>
-
+                <div class="col-md-4">
+                  <figure class="figure">
+                    <img src="/img/projects img/flow_lab.png" class="figure-img img-fluid z-depth-1" alt="..."
+                      style="width: 350px">
+                    <figcaption class="figure-caption">Email Development</figcaption>
+                    <p class="h6">Flow Lab Newsletter Email</p>
+                    <button class="cta">
+                      <span class="hover-underline-animation"><a href="https://capable-cajeta-2c6296.netlify.app/"> View
+                          Demo </a></span>
+                      <i class="fas fa-long-arrow-alt-right" id="arrow-horizontal"></i>
+                    </button>
+                  </figure>
                 </div>
 
+
+                <div class="col-md-4">
+                  <figure class="figure">
+                    <img src="/img/projects img/studio_binder.png" class="figure-img img-fluid z-depth-1" alt="..."
+                      style="width: 350px">
+                    <figcaption class="figure-caption">Web Development</figcaption>
+                    <p class="h6">Studio Binder Newsletter Email</p>
+                    <button class="cta">
+                      <span class="hover-underline-animation"><a href="https://chic-rolypoly-4f8db9.netlify.app/"> View
+                          Demo </a></span>
+                      <i class="fas fa-long-arrow-alt-right" id="arrow-horizontal"></i>
+                    </button>
+                  </figure>
+                </div>
               </div>
 
 
-              <div class="tab-pane fade" id="contact0" role="tabpanel" aria-labelledby="contact-tab0">
-                <div class="grid">
-
-                  <div class="g-col-6  g-col-md-4">
-                    <div class="card hover" style="width: 20rem;">
-                      <img src="/img/projects img/CaptureMemory game.JPG" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Simple React Memory App</h5>
-                        <p class="card-text">Web Development</p>
-                        <a href="https://benevolent-begonia-6e59ef.netlify.app/" class="btn">Live Demo&nbsp;<span><i
-                              class="fas fa-chevron-circle-right"></i></span></a>
-                        <a href="https://github.com/enorddev/memory-app.git" class="btn">View Code&nbsp;<span><i
-                              class="fas fa-chevron-circle-right"></i></span></a>
-                      </div>
-                    </div>
-                  </div>
-
-
-
-                  <div class="g-col-6 hover g-col-md-4">
-                    <div class="card hover" style="width: 20rem;">
-                      <img src="/img/projects img/sneakers.JPG" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">React E-commerce Product Page</h5>
-                        <p class="card-text">Web Development</p>
-                        <a href="https://splendid-trifle-36aaad.netlify.app/" class="btn">Live Demo&nbsp;<span><i
-                              class="fas fa-chevron-circle-right"></i></span></a>
-                        <a href="https://github.com/enorddev/react-ecommerce-app.git" class="btn">View
-                          Code&nbsp;<span><i class="fas fa-chevron-circle-right"></i></span></a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="g-col-6  g-col-md-4">
-                    <div class="card hover" style="width: 20rem;">
-                      <img src="/img/projects img/yelp.JPG" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">YelpCamp Website </h5>
-                        <p class="card-text">Web Development</p>
-                        <a href="https://moonlit-selkie-dff7fc.netlify.app/" class="btn">Live Demo&nbsp;<span><i
-                              class="fas fa-chevron-circle-right"></i></span></a>
-                        <a href="https://github.com/enorddev/YelpCamp-Project.git" class="btn">View Code&nbsp;<span><i
-                              class="fas fa-chevron-circle-right"></i></span></a>
-                      </div>
-                    </div>
-                  </div>
-
-
-
+              <div class="row" id="projects-row">
+                <div class="col-md-4">
+                  <figure class="figure">
+                    <img src="/img/projects img/memory_game.png" class="figure-img img-fluid z-depth-1" alt="..."
+                      style="width: 350px">
+                    <figcaption class="figure-caption">Web Development</figcaption>
+                    <p class="h6">Memory Game w/ React</p>
+                    <button class="cta">
+                      <span class="hover-underline-animation"><a href="https://benevolent-begonia-6e59ef.netlify.app/">
+                          View Demo </a></span>
+                      <i class="fas fa-long-arrow-alt-right" id="arrow-horizontal"></i>
+                    </button>
+                  </figure>
                 </div>
 
-                <div class="grid">
-
-                  <div class="g-col-6 g-col-md-4">
-                    <div class="card hover" style="width: 20rem;">
-                      <img src="/img/captures/portfolio_capture.JPG" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Portofolio Website</h5>
-                        <p class="card-text">Web Development</p>
-                        <a href="https://scintillating-dango-cdbd53.netlify.app/" class="btn">Live Demo&nbsp;<span><i
-                              class="fas fa-chevron-circle-right"></i></span></a>
-                        <a href="https://github.com/enorddev/Porfolio-part-2.git" class="btn">View Code&nbsp;<span><i
-                              class="fas fa-chevron-circle-right"></i></span></a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="g-col-6 g-col-md-4">
-                    <div class="card hover" style="width: 20rem;">
-                      <img src="/img/captures/agency.JPG" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Creative Agency Website </h5>
-                        <p class="card-text">Web Development Development</p>
-                        <a href="https://peaceful-bombolone-99e5ec.netlify.app/index.html" class="btn">Live
-                          Demo&nbsp;<span><i class="fas fa-chevron-circle-right"></i></span></a>
-                        <a href="https://github.com/enorddev/Creative-Agency-Website-Mock.git" class="btn">View
-                          Code&nbsp;<span><i class="fas fa-chevron-circle-right"></i></span></a>
-                      </div>
-                    </div>
-                  </div>
+                <div class="col-md-4">
+                  <figure class="figure">
+                    <img src="/img/projects img/yelp_camp.png" class="figure-img img-fluid z-depth-1" alt="..."
+                      style="width: 350px">
+                    <figcaption class="figure-caption">Web Development</figcaption>
+                    <p class="h6">Yelp Camp Site</p>
+                    <button class="cta">
+                      <span class="hover-underline-animation"><a
+                          href="https://moonlit-selkie-dff7fc.netlify.app/index.html"> View Demo </a></span>
+                      <i class="fas fa-long-arrow-alt-right" id="arrow-horizontal"></i>
+                    </button>
+                  </figure>
                 </div>
 
-                <div class="grid">
-                  <div class="g-col-6 g-col-md-4">
-                    <div class="card hover" style="width: 20rem;">
-                      <img src="/img/projects img/greguy.JPG" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Realtor Landing Page</h5>
-                        <p class="card-text">Web Development</p>
-                        <a href="https://stellar-melomakarona-3e0de3.netlify.app/" class="btn">Live Demo&nbsp;<span><i
-                              class="fas fa-chevron-circle-right"></i></span></a>
-                        <a href="https://github.com/enorddev/Ask-Greguy.git" class="btn">View Code&nbsp;<span><i
-                              class="fas fa-chevron-circle-right"></i></span></a>
-                      </div>
-                    </div>
-                  </div>
+
+                <div class="col-md-4">
+                  <figure class="figure">
+                    <img src="/img/projects img/frank_and_oak.png" class="figure-img img-fluid z-depth-1" alt="..."
+                      style="width: 350px">
+                    <figcaption class="figure-caption">Email Development</figcaption>
+                    <p class="h6">Frank and Oak Newsletter Email</p>
+                    <button class="cta">
+                      <span class="hover-underline-animation"><a
+                          href="https://resonant-biscochitos-122046.netlify.app/"> View Demo </a></span>
+                      <i class="fas fa-long-arrow-alt-right" id="arrow-horizontal"></i>
+                    </button>
+                  </figure>
                 </div>
               </div>
             </div>
@@ -534,136 +387,90 @@
         </div>
       </div>
     </div>
-
     <!-- PROJECTS SECTION ENDS HERE -->
-    <div class="container-md" id="contact-section">
-      <h1>Contact</h1>
 
-      <form class="contact-form">
-        <div class="form-left">
-          <div class="form-outline mb-4">
-            <input type="text" id="name" class="form-control" placeholder="Name" required autocomplete="off" />
-            <label class="form-label" for="form4Example1">Name</label>
+
+    <!-- CONTACT FORM -->
+    <div class="container-fluid" id="contact-section">
+      <div class="contact-content">
+
+        <form action="#contact-section" class="contact-form">
+          <h2>Contact</h2>
+          <div class="form-left">
+            <div class="form-outline mb-4">
+              <input type="text" id="name" class="form-control" placeholder="Name" required autocomplete="off" />
+              <label class="form-label" for="form4Example1">Name</label>
+            </div>
+
+
+            <div class="form-outline mb-4">
+              <input type="email" id="email_id" class="form-control" placeholder="Email adress" required
+                autocomplete="off" />
+              <label class="form-label" for="form4Example2">Email address</label>
+            </div>
+
+            <div class="form-outline mb-4">
+              <input type="text" id="subject" class="form-control" placeholder="Subject" required autocomplete="off" />
+              <label class="form-label" for="form4Example2">Subject</label>
+            </div>
           </div>
 
+          <div class="form-right">
+            <div class="form-outline mb-4">
+              <textarea class="form-control" id="message" rows="6" cols="40" placeholder="Message"></textarea>
+            </div>
 
-          <div class="form-outline mb-4">
-            <input type="email" id="email_id" class="form-control" placeholder="Email adress" required
-              autocomplete="off" />
-            <label class="form-label" for="form4Example2">Email address</label>
+
+
+            <!-- <button type="submit" onclick="sendEmail()" class="btn btn-primary mb-4" id="btn-form">Send
+              Message
+            </button> -->
+            <button type="submit" onclick="sendEmail()">
+              <div class="svg-wrapper-1">
+                <div class="svg-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path fill="currentColor"
+                      d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+              <span>Send Message</span>
+            </button>
           </div>
 
-          <div class="form-outline mb-4">
-            <input type="text" id="subject" class="form-control" placeholder="Subject" required autocomplete="off" />
-            <label class="form-label" for="form4Example2">Subject</label>
+          <div class="alert alert-success">
+            <strong>Thank you!</strong> Your message has been sent.
           </div>
-        </div>
-
-        <div class="form-right">
-          <div class="form-outline mb-4">
-            <textarea class="form-control" id="message" rows="6" cols="40" placeholder="Message"></textarea>
-          </div>
-
-
-
-          <button type="submit" onclick="sendEmail()" class="btn btn-primary mb-4" id="btn-form">Send
-            Message
-          </button>
-        </div>
-
-        <div class="alert alert-success">
-          <strong>Thank you!</strong> Your message has been sent.
-        </div>
-
-      </form>
-    </div>
-    <footer>
-
-      <div class="footer">
-        <div class="arrow-top pageUp">
-          <a href="#"><i class="fas fa-chevron-up"></i></a>
-        </div>
-        <div class="footer-content">
-          <div class="footer-social">
-            <a class="nav-link" href="https://www.linkedin.com/in/edwin-nord-159884240/"><i class="fab fa-linkedin"></i></a>
-            <a class="nav-link" href="https://github.com/enorddev"><i class="fab fa-github"></i></a>
-            <a href="mailto:edwin.nord@gmail.com" class="nav-link"><i class="fa fa-envelope"></i></a>
-          </div>
-          <div class="copyright">
-            <span style="font-weight: 300; letter-spacing: 1.5px;">Edwin Nord<span style="color: rgba(245, 18, 18, 0.842);">
-                ©2022</span></span>
-          </div>
-    
-        </div>
+        </form>
       </div>
-    </footer>
-
-
-  </div>
-
-
-
-  <!-- FOOTER SECTION -->
-
-  
- 
+    </div>
 
 
 
 
-
-  <!-- FOOTER ENDS HERE -->
+    <div class="arrow-top pageUp">
+      <a href="#"><i class="fas fa-chevron-up"></i></a>
+    </div>
+    <!-- FOOTER ENDS HERE -->
 
   </div>
+
+  <footer class="bg-dark text-center text-white">
+    <div class="text-center p-3 footer-social" style="background-color: #1a191d; font-weight: 300;"> <span> © 2023
+      </span>
+      <span style="color: rgba(245, 18, 18, 0.842);">&nbsp; Edwin Nord </span>
+    </div>
+
+  </footer>
+
 
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
   <script type="text/javascript">emailjs.init('GUY4sNoil3TacnxC0')</script>
-  <script type="text/javascript">
-
-
-
-
-
-
-    function sendEmail() {
-
-
-
-      const params = {
-        from_name: document.getElementById('name').value,
-        email_id: document.getElementById('email_id').value,
-        subject: document.getElementById('subject').value,
-        message: document.getElementById('message').value,
-
-      }
-
-
-      emailjs.send("service_3xn8b0e", "template_8hedb59", params).then(function (res) {
-
-
-
-        document.querySelector('.alert').style.display = 'block'
-        setTimeout(() => {
-          document.querySelector('.alert').style.display = 'none'
-          email_id.value = "";
-          name.value = "";
-          subject.value = "";
-          message.value = "";
-
-        }, 4000)
-      })
-    }
-
-
-
-
-
-
-
-
-  </script>
+  <script type="text/javascript"></script>
 
 </body>
 
