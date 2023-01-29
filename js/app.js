@@ -31,6 +31,27 @@ function writeText() {
     }
     setTimeout(writeText, 50)
 }
+// REMOVE ACTIVE CLASS ON LOAD //
+window.addEventListener('load', () => {
+    nav.classList.remove('active')
+});
+
+window.addEventListener('scroll', fixedNav);
+
+function fixedNav() {
+    if (window.scrollY > nav.offsetHeight + 170) {
+        nav.classList.add('active');
+        emailSection.classList.add('scroll');
+        webSection.classList.add('scroll');
+
+    } else {
+        nav.classList.remove('active');
+        emailSection.classList.remove('scroll');
+        webSection.classList.remove('scroll');
+
+    }
+}
+
 
 // SIDE NAV
 function openNav() {
@@ -53,26 +74,6 @@ $(function() {
 
 
 
-// REMOVE ACTIVE CLASS ON LOAD //
-window.addEventListener('load', () => {
-    nav.classList.remove('active')
-});
-
-window.addEventListener('scroll', fixedNav);
-
-function fixedNav() {
-    if (window.scrollY > nav.offsetHeight + 170) {
-        nav.classList.add('active');
-        emailSection.classList.add('scroll');
-        webSection.classList.add('scroll');
-
-    } else {
-        nav.classList.remove('active');
-        emailSection.classList.remove('scroll');
-        webSection.classList.remove('scroll');
-
-    }
-}
 
 function sendEmail() {
 
