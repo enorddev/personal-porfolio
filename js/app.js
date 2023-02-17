@@ -73,6 +73,57 @@ $(function() {
 
 
 
+  //COMPUTER SKILLS LIST//
+ 
+// function makeList() {
+//     const computerSkillsData = [
+//       "Html 5",
+//       "Css 3/SASS",
+//       "JavaScript / j Query / J SON",
+//       "Bootstrap 5",
+//       "React",
+//       "Flexbox",
+//       "Php",
+//       "WordPress",
+//       "Litmus",
+//       "Rest API knowledge",
+//       "NodeJS",
+//       "npm",
+//       "Responsive Web Design",
+//       "Git, GitHub"
+//   ];
+
+//   const listItems = computerSkillsData.map(item) => (
+//     <></>
+//   )
+
+// }
+
+// const div = document.getElementById('computer-list');
+// const ul = document.getElementById('computer-skills');
+// const li = document.createElement('li');
+
+// document.body.appendChild(div);
+// div.appendChild(ul);
+
+// let listItems = computerSkillsData.length;
+
+
+// for( i = 0; i < listItems; i++) {
+//     li.textContent = computerSkillsData[i];
+//     ul.appendChild(li)
+// }
+
+
+
+
+
+
+
+
+
+
+
 
 
 function sendEmail() {
@@ -104,6 +155,20 @@ function sendEmail() {
         }, 4000)
     })
 }
+
+
+//TOP BUTTON //
+
+let topButton = document.getElementById("topBtn");
+window.onscroll = function() {
+    scrollFunction(); 
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
 
 
 
