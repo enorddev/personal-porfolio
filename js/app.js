@@ -73,57 +73,6 @@ $(function() {
 
 
 
-  //COMPUTER SKILLS LIST//
- 
-// function makeList() {
-//     const computerSkillsData = [
-//       "Html 5",
-//       "Css 3/SASS",
-//       "JavaScript / j Query / J SON",
-//       "Bootstrap 5",
-//       "React",
-//       "Flexbox",
-//       "Php",
-//       "WordPress",
-//       "Litmus",
-//       "Rest API knowledge",
-//       "NodeJS",
-//       "npm",
-//       "Responsive Web Design",
-//       "Git, GitHub"
-//   ];
-
-//   const listItems = computerSkillsData.map(item) => (
-//     <></>
-//   )
-
-// }
-
-// const div = document.getElementById('computer-list');
-// const ul = document.getElementById('computer-skills');
-// const li = document.createElement('li');
-
-// document.body.appendChild(div);
-// div.appendChild(ul);
-
-// let listItems = computerSkillsData.length;
-
-
-// for( i = 0; i < listItems; i++) {
-//     li.textContent = computerSkillsData[i];
-//     ul.appendChild(li)
-// }
-
-
-
-
-
-
-
-
-
-
-
 
 
 function sendEmail() {

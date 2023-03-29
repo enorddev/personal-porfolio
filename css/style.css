@@ -235,8 +235,8 @@ body {
     width: 24px;
     height: 24px;
     /* margin-left: -12px; */
-    border-left: 1px solid rgb(0, 0, 0);
-    border-bottom: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     -webkit-animation: sdb07 2s infinite;
@@ -256,7 +256,7 @@ body {
     animation-delay: .15s;
   }
   #section07 a span:nth-of-type(3) {
-    
+    bottom: 80px;
     -webkit-animation-delay: .3s;
     animation-delay: .3s;
   }
@@ -596,7 +596,7 @@ li {
 }
 
 .learn-more:hover {
-    color: #111;
+    color: #ffffff;
 }
 
 
