@@ -11,7 +11,7 @@ body {
     width: 100%;
     font-family: 'Raleway', sans-serif;
     background: url("/img/pexels-junior-teixeira-2047905.jpg");
-    height: auto;
+    height: 100vh;
 }
 
 
@@ -711,7 +711,7 @@ li {
     background-position: center;
     background-size: cover;
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     margin: auto;
     padding: 50px 0;
 }
