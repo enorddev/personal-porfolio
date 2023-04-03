@@ -38,7 +38,7 @@ body {
 }
 
 .button-text a {
-    color: #000000;
+    color: #ffffff;
     
 }
 
@@ -292,13 +292,18 @@ body {
 
 
 #skills-section {
-    margin: 250px 0 250px 0;
-    border-radius: 50px;
-    height: auto;
+    width: 100%;
+    max-width: 1500px;
     margin: auto;
+    /* margin: 250px 0 250px 0; */
+    border-radius: 50px;
+    /* height: 100%; */
     background: url('/img/pexels-la-miko-3616773.jpg');
-    background-position: center;
+    background-repeat: no-repeat;
+    background-position: bottom;
     background-size: cover;
+    background-attachment: fixed;
+    
 }
 
 .skills h2 {
@@ -308,22 +313,40 @@ body {
     text-decoration: underline;
     text-decoration-color: rgba(245, 18, 18, 0.842);
     text-underline-offset: 12px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 25px;
 }
+   
 
 .skills-flex {
+    padding-top: 50px;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
     display: flex;
+    justify-content: center;
+    /* height: 100%; */
+    /* border: thin solid red; */
+    
+    /* text-align: center; */
+    /* display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 0.938rem;
     font-weight: 600;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px); */
+}
+
+#computer-list,
+.software-list {
+    /* width: 100%;
+    max-width: 500px;
+    margin: auto; */
 }
 
 .list-group-item {
     background-color: transparent;
     border: thin solid transparent;
+    font-weight: 600;
 }
 
 
@@ -331,11 +354,11 @@ li {
     list-style-type: none;
 }
 
-.skills-list {
+/* .skills-list {
     width: 100%;
     height: auto;
 
-}
+} */
 
 .skills-list li::before {
     content: "\2022 ";
@@ -413,7 +436,7 @@ li {
 
 
 
-.grid:after {
+/* .grid:after {
     content: '';
     display: block;
     clear: both;
@@ -438,7 +461,7 @@ li {
     .grid-item {
         width: 50%;
     }
-}
+} */
 
 
 
@@ -562,7 +585,7 @@ li {
 
 .learn-more {
     padding: 5px 15px;
-    border: 1px solid rgba(245, 18, 18, 0.842);
+    border: 1px solid rgba(255, 255, 255, 0.842);
     position: relative;
     overflow: hidden;
     background-color: transparent;
@@ -572,12 +595,13 @@ li {
     transition: .3s;
     z-index: 1;
     font-family: inherit;
-    color: #ffffff;
+    color: rgba(245, 18, 18, 0.842);
     backdrop-filter: blur(10px);
+
 }
 
 
-.learn-more::before {
+/* .learn-more::before {
     content: '';
     width: 0;
     height: 400%;
@@ -589,15 +613,18 @@ li {
     transition: .5s ease;
     display: block;
     z-index: -1;
+    
+} */
+
+.learn-more a {
+    transition: all 0.2s ease-in-out;
 }
 
-.learn-more:hover::before {
-    width: 105%;
-}
 
-.learn-more:hover {
-    color: #ffffff;
+.learn-more a:hover {
+    color: rgba(245, 18, 18, 0.842);
 }
+    
 
 
 
@@ -924,4 +951,28 @@ textarea:focus {
 }
 
 
+
+@media screen and (max-width:840px) {
+    .skills-flex hr {
+        display: none;
+    }
+
+    .skills-flex {
+        padding-top: 25px;
+    }
+
+    .skills-flex h3 {
+        font-size: 20px;
+        font-weight: 600;
+        color:rgba(245, 18, 18, 0.842) ;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .skills-flex {
+        text-align: center;
+
+    }
+}
 
