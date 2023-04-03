@@ -687,6 +687,12 @@ li {
     transform-origin: bottom left;
 }
 
+.figure-caption {
+    color: rgba(245, 18, 18, 0.842);
+    font-weight: bolder;
+    
+}
+
 /*PROJECT SECTION ENDS HERE */
 
 
