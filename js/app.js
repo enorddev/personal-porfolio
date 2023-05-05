@@ -64,6 +64,9 @@ function closeNav() {
     document.querySelector(".navbar-brand").style.marginLeft = "0";
 }
 
+
+
+
 $(function() {
     $('a[href*=#]').on('click', function(e) {
       e.preventDefault();
