@@ -15,9 +15,10 @@ const form = document.querySelector('.contact-form');
 
 // AUTO TEXT EFFECT //
 
-const textEl = document.getElementById('text')
-const textTwo = document.getElementById('textTwo')
-const text = "{Front-end Web Developer}"
+const textEl = document.getElementById('text');
+const textTwo = document.getElementById('textTwo');
+const text = "{Front-end Web Developer}";
+
 
 let textIdx = 0;
 writeText();
@@ -27,10 +28,14 @@ function writeText() {
     textIdx++
 
     if (textIdx > text.length) {
-        textIdx = text.value.innerText
+        textIdx = text.value.innerText;
+        
     }
+
     setTimeout(writeText, 50)
 }
+
+
 // REMOVE ACTIVE CLASS ON LOAD //
 window.addEventListener('load', () => {
     nav.classList.remove('active')
