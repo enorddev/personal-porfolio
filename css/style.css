@@ -357,11 +357,11 @@ li {
 }
 
 .services h2 {
-    text-align: center;
     color: #000000;
     text-decoration: underline;
     text-decoration-color: rgba(245, 18, 18, 0.842);
     text-underline-offset: 12px;
+    text-align: center;
 }
 
 .container-services {
