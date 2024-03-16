@@ -44,7 +44,7 @@ window.addEventListener('load', () => {
 window.addEventListener('scroll', fixedNav);
 
 function fixedNav() {
-    if (window.scrollY > nav.offsetHeight + 169) {
+    if (window.scrollY > nav.offsetHeight + 170) {
         nav.classList.add('active');
         emailSection.classList.add('scroll');
         webSection.classList.add('scroll');
@@ -80,7 +80,17 @@ $(function() {
   });
 
 
+//TOP BUTTON //
 
+let topButton = document.getElementById("topBtn");
+window.onscroll = function() {
+    scrollFunction(); 
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 
 
 function sendEmail() {
@@ -112,20 +122,6 @@ function sendEmail() {
         }, 4000)
     })
 }
-
-
-//TOP BUTTON //
-
-let topButton = document.getElementById("topBtn");
-window.onscroll = function() {
-    scrollFunction(); 
-}
-
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-
 
 
 
