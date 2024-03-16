@@ -17,7 +17,7 @@ const form = document.querySelector('.contact-form');
 
 const textEl = document.getElementById('text');
 const textTwo = document.getElementById('textTwo');
-const text = "{Front-end Web Developer}";
+const text = "{Web Developer}";
 
 
 let textIdx = 0;

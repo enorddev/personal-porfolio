@@ -2,6 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
 
 /* GLOBAL */
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .h6 {
     color: #000000 !important;
     font-weight: bold;
@@ -11,17 +19,9 @@ p {
     font-size: 1rem;
 }
 
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     width: 100%;
-    /*font-family: 'Raleway', sans-serif;*/
-font-family:Arial, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     height: 100%;
 }
 
@@ -83,7 +83,10 @@ font-family:Arial, Helvetica, sans-serif;
 .navbar a:not(.navigation-brand):hover,
 .navbar.active .nav-link:hover {
     border-radius: 10px;
-    box-shadow: 0 0 5px rgba(245, 18, 18, 0.842), 0 0 25px rgba(245, 18, 18, 0.842), 0 0 50px rgba(245, 18, 18, 0.842), 0 0 200px rgba(245, 18, 18, 0.842);
+    box-shadow: 0 0 5px rgba(245, 18, 18, 0.842), 
+                0 0 25px rgba(245, 18, 18, 0.842), 
+                0 0 50px rgba(245, 18, 18, 0.842), 
+                0 0 200px rgba(245, 18, 18, 0.842);
     transform: scale(0.98);
 }
 
@@ -164,11 +167,7 @@ font-family:Arial, Helvetica, sans-serif;
     margin-top: 20px;
     transition: all 0.1s ease-in-out;
     border-width: 4px;
-    
 }
-
-
-
 
 
 .fas {
@@ -201,18 +200,14 @@ font-family:Arial, Helvetica, sans-serif;
     transition: all 0.2s ease-in-out;
 }
 
-#section07 a {
-    /* padding-top: 80px; */
-}
-
 #section07 a span {
 
     position: absolute;
     text-align: center;
     width: 24px;
     height: 24px;
-    border-left: 1px solid rgba(245, 18, 18, 0.842);
-    border-bottom: 1px solid rgba(245, 18, 18, 0.842);
+    border-left: 2px solid rgba(245, 18, 18, 0.842);
+    border-bottom: 2px solid rgba(245, 18, 18, 0.842);
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     -webkit-animation: sdb07 2s infinite;
@@ -281,7 +276,6 @@ font-family:Arial, Helvetica, sans-serif;
     max-width: 1132px;
     margin: -150px auto;
     border-radius: 3rem;
-    /*border-radius: 50px;*/
     background: url('/img/pexels-la-miko-3616773.jpg');
     background-repeat: no-repeat;
     background-position: bottom;
@@ -308,7 +302,6 @@ font-family:Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
     gap: 150px;
-
 }
 
 
@@ -324,12 +317,6 @@ font-family:Arial, Helvetica, sans-serif;
 li {
     list-style-type: none;
 }
-
-
-/*.skills-list li  {
-    margin: auto;
-}*/
-
 
 
 .skills-list li::before {
@@ -377,7 +364,9 @@ li {
     margin: auto;
 }
 
-.container-services .fas {
+.container-services .fas,
+.container-services .fa-wordpress
+{
     color: rgba(245, 18, 18, 0.842);
     font-size: 2.125rem;
 }
@@ -403,10 +392,6 @@ li {
 
 
 /* SERVICES SECTION ENDS HERE */
-
-
-
-
 
 
 /* PROJECT SECTION */
@@ -546,21 +531,6 @@ li {
 }
 
 
-/* .learn-more::before {
-    content: '';
-    width: 0;
-    height: 400%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-    background: #ffffff;
-    transition: .5s ease;
-    display: block;
-    z-index: -1;
-    
-} */
-
 .learn-more a {
     transition: all 0.2s ease-in-out;
 }
@@ -570,8 +540,6 @@ li {
     color: rgba(245, 18, 18, 0.842);
     font-weight: bold;
 }
-
-
 
 
 .projects-flex,
@@ -613,6 +581,7 @@ li {
     position: relative;
     color: rgb(255, 255, 255);
     padding-bottom: 20px;
+    
 }
 
 .hover-underline-animation:after {
@@ -626,6 +595,7 @@ li {
     background-color: #ffffff;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
+    margin-left: 2.8rem;
 }
 
 .cta:hover .hover-underline-animation:after {
@@ -697,8 +667,6 @@ li {
 }
 
 
-
-
 textarea {
     resize: none;
 }
@@ -718,7 +686,10 @@ textarea:focus {
 #btn-form:hover {
     color: rgba(245, 18, 18, 0.842);
     background: rgba(255, 255, 255, 0.842);
-    box-shadow: 0 0 5px rgba(245, 18, 18, 0.842), 0 0 25px rgba(245, 18, 18, 0.842), 0 0 50px rgba(245, 18, 18, 0.842), 0 0 100px rgba(245, 18, 18, 0.842);
+    box-shadow: 0 0 5px rgba(245, 18, 18, 0.842), 
+                0 0 25px rgba(245, 18, 18, 0.842), 
+                0 0 50px rgba(245, 18, 18, 0.842), 
+                0 0 100px rgba(245, 18, 18, 0.842);
     transform: scale(0.98);
 
 }
@@ -929,7 +900,5 @@ textarea:focus {
     .skills-flex {
         text-align: center;
         gap: 20px;
-
-
     }
 }
