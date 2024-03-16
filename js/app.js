@@ -44,7 +44,7 @@ window.addEventListener('load', () => {
 window.addEventListener('scroll', fixedNav);
 
 function fixedNav() {
-    if (window.scrollY > nav.offsetHeight + 170) {
+    if (window.scrollY > nav.offsetHeight + 169) {
         nav.classList.add('active');
         emailSection.classList.add('scroll');
         webSection.classList.add('scroll');
