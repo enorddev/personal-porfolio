@@ -11,8 +11,11 @@
   <link rel="stylesheet" href="/css/style.css">
   <link rel="icon" type="image/x-icon" href="/img/icons/Edwin nord dev.png">
   <title>My Portfolio</title>
-
-
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script defer src="/js/app.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">emailjs.init('GUY4sNoil3TacnxC0')</script>
+  <script type="text/javascript"></script>
 </head>
 
 <body>
@@ -49,22 +52,22 @@
                 <a class="nav-link" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#services-content">What Do I Do?</a>
+                <a class="nav-link" href="#" id="service-link">What Do I Do?</a>
               </li>
               <li class="nav-item">
-                <a href="#skills-section" class="nav-link">Skills</a>
+                <a href="#" class="nav-link" id="skill-link">Skills</a>
               </li>
               <li class="nav-item">
-                <a href="#portfolio-projects" class="nav-link">Projects</a>
+                <a href="#" class="nav-link" id="project-link">Projects</a>
               </li>
               <li class="nav-item">
-                <a href="#contact-section" class="nav-link">Contact</a>
+                <a href="#" class="nav-link" id="contact-link">Contact</a>
               </li>
               <li class="nav-item">
-                <a href="https://www.linkedin.com/in/edwin-nord/" class="nav-link">linkedin</a>
+                <a href="https://www.linkedin.com/in/edwin-nord/" class="nav-link" target="_blank">linkedin</a>
               </li>
               <li class="nav-item">
-                <a href="https://github.com/enorddev" class="nav-link">Github</a>
+                <a href="https://github.com/enorddev" class="nav-link" target="_blank">Github</a>
               </li>
 
             </ul>
@@ -74,14 +77,15 @@
 
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#project-header">Home</a>
-        <a href="#services-content">What Do I Do?</a>
-        <a href="#skills-section">Skills</a>
-        <a href="#portfolio-projects">Projects</a>
-        <a href="#contact-section">Contact</a>
+        <a href="/">Home</a>
+        <a href="#" id="service-link-side">What Do I Do?</a>
+        <a href="#" id="skill-link-side">Skills</a>
+        <a href="#" id="project-link-side">Projects</a>
+        <a href="#" id="contact-link-side">Contact</a>
         <div class="side-nav-social">
-          <a class="nav-link" href="https://www.linkedin.com/in/edwin-nord/"><i class="fab fa-linkedin"></i></a>
-          <a class="nav-link" href="https://github.com/enorddev"><i class="fab fa-github"></i></a>
+          <a class="nav-link" href="https://www.linkedin.com/in/edwin-nord/" target="_blank"><i
+              class="fab fa-linkedin"></i></a>
+          <a class="nav-link" href="https://github.com/enorddev" target="_blank"><i class="fab fa-github"></i></a>
         </div>
 
       </div>
@@ -89,7 +93,7 @@
 
       <!-- Background image -->
       <div id="intro-example" class="p-5 text-center bg-image"
-        style="background-image: url('./img/pexels-cottonbro-5083217.jpg'); height: 100vh; ">
+        style="background-image: url('./img/pexels-goumbik-574070.jpg'); height: 100vh; object-fit: cover; ">
         <div class="mask" style="background-color: rgba(0, 0, 0, 0.125);">
           <div class="d-flex justify-content-center align-items-center h-100">
             <div class="text-white">
@@ -111,7 +115,7 @@
                   <span class="icon arrow"></span>
                 </span>
                 <span class="button-text">
-                  <a href="#portfolio-projects" role="button" rel="nofollow">View
+                  <a href="#" role="button" rel="nofollow" id="project-link-hero">View
                     Projects</a>
                 </span>
               </button>
@@ -270,7 +274,8 @@
                       <p class="h6">Grant Miller Dealership Website</p>
                     </a>
                     <button class="cta">
-                      <span class="hover-underline-animation"><a href="https://www.grantmillermotors.com/" target="_blank">
+                      <span class="hover-underline-animation"><a href="https://www.grantmillermotors.com/"
+                          target="_blank">
                           View </a></span>
                       <i class="fas fa-long-arrow-alt-right" id="arrow-horizontal"></i>
                     </button>
@@ -287,7 +292,8 @@
                       <p class="h6">Stouffville Nissan Dealership Website</p>
                     </a>
                     <button class="cta">
-                      <span class="hover-underline-animation"><a href="https://www.stouffvillenissan.com/" target="_blank"> View
+                      <span class="hover-underline-animation"><a href="https://www.stouffvillenissan.com/"
+                          target="_blank"> View
                         </a></span>
                       <i class="fas fa-long-arrow-alt-right" id="arrow-horizontal"></i>
                     </button>
@@ -338,7 +344,8 @@
                       <p class="h6">Greguy Jules Realtor w/ WordPress</p>
                     </a>
                     <button class="cta">
-                      <span class="hover-underline-animation"><a href="https://greguy-jules-realtor.netlify.app/" target="_blank"> View
+                      <span class="hover-underline-animation"><a href="https://greguy-jules-realtor.netlify.app/"
+                          target="_blank"> View
                         </a></span>
                       <i class="fas fa-long-arrow-alt-right" id="arrow-horizontal"></i>
                     </button>
@@ -354,7 +361,8 @@
                       <p class="h6">E-commerce Product Page w/ React</p>
                     </a>
                     <button class="cta">
-                      <span class="hover-underline-animation"><a href="https://shoe-product-app-react.netlify.app/" target="_blank">
+                      <span class="hover-underline-animation"><a href="https://shoe-product-app-react.netlify.app/"
+                          target="_blank">
                           View </a></span>
                       <i class="fas fa-long-arrow-alt-right" id="arrow-horizontal"></i>
                     </button>
@@ -372,7 +380,8 @@
                       <p class="h6">Memory Game w/ React</p>
                     </a>
                     <button class="cta">
-                      <span class="hover-underline-animation"><a href="https://react-memory-game-app.netlify.app/" target="_blank">
+                      <span class="hover-underline-animation"><a href="https://react-memory-game-app.netlify.app/"
+                          target="_blank">
                           View </a></span>
                       <i class="fas fa-long-arrow-alt-right" id="arrow-horizontal"></i>
                     </button>
@@ -390,7 +399,8 @@
                       <p class="h6">Yelp Camp Site</p>
                     </a>
                     <button class="cta">
-                      <span class="hover-underline-animation"><a href="https://yelpcamp-site.netlify.app/" target="_blank"> View
+                      <span class="hover-underline-animation"><a href="https://yelpcamp-site.netlify.app/"
+                          target="_blank"> View
                         </a></span>
                       <i class="fas fa-long-arrow-alt-right" id="arrow-horizontal"></i>
                     </button>
@@ -407,7 +417,8 @@
                       <p class="h6">Flow Lab Newsletter Email</p>
                     </a>
                     <button class="cta">
-                      <span class="hover-underline-animation"><a href="https://flow-lab-email.netlify.app/" target="_blank"> View
+                      <span class="hover-underline-animation"><a href="https://flow-lab-email.netlify.app/"
+                          target="_blank"> View
                         </a></span>
                       <i class="fas fa-long-arrow-alt-right" id="arrow-horizontal"></i>
                     </button>
@@ -496,11 +507,7 @@
 
   </footer>
 
-  <script type="text/javascript" src="js/mdb.min.js"></script>
-  <script defer src="/js/app.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script type="text/javascript">emailjs.init('GUY4sNoil3TacnxC0')</script>
-  <script type="text/javascript"></script>
+
 
 </body>
 

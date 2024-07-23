@@ -10,7 +10,58 @@ const messageBtn = document.getElementById('btn-form');
 const form = document.querySelector('.contact-form');
 
 
+// NAVIGATION //
+document.getElementById('service-link').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('services-content').scrollIntoView({ behavior: 'smooth' });
+});
 
+document.getElementById('service-link-side').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('services-content').scrollIntoView({ behavior: 'smooth' });
+});
+
+
+document.getElementById('skill-link').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('skills-section').scrollIntoView({ behavior: 'smooth' });
+});
+
+document.getElementById('skill-link-side').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('skills-section').scrollIntoView({ behavior: 'smooth' });
+});
+
+
+document.getElementById('project-link').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('portfolio-projects').scrollIntoView({ behavior: 'smooth' });
+});
+
+document.getElementById('project-link-side').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('portfolio-projects').scrollIntoView({ behavior: 'smooth' });
+});
+
+
+document.getElementById('project-link-hero').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('portfolio-projects').scrollIntoView({ behavior: 'smooth' });
+});
+
+
+document.getElementById('contact-link').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('contact-section').scrollIntoView({ behavior: 'smooth' });
+});
+
+document.getElementById('contact-link-side').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('contact-section').scrollIntoView({ behavior: 'smooth' });
+});
+
+
+// END //
 
 
 // AUTO TEXT EFFECT //
