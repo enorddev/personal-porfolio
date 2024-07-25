@@ -10,19 +10,32 @@
     padding: 0;
 }
 
+h1 {font-size: 2.5em !important;} @media (max-width: 768px){h1 {font-size: 26px!important;}}
+  
+h2 {font-size: 1.8em!important;} @media (max-width: 768px){h2 {font-size: 22px!important;}}
+  
+h3 {font-size: 1.4em!important;} @media (max-width: 768px){h3 {font-size: 20px!important;}}
+  
+h4 {font-size: 1.3em!important;} @media (max-width: 768px){h4 {font-size: 18px!important;}}
+  
+h5 {font-size: 1.2em!important;} @media (max-width: 768px){h5 {font-size: 17px!important;}}
+  
+h6, .h6 {font-size: 1.1em!important;} @media (max-width: 768px){h6 {font-size: 16px!important;}}
+
 .h6 {
     color: #000000 !important;
     font-weight: bold;
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 body {
     width: 100%;
     font-family:Arial, Helvetica, sans-serif;
     height: 100%;
+    background: url("/img/pexels-la-miko-3616773.jpg");
 }
 
 
@@ -45,7 +58,7 @@ body {
 }
 
 .learn-more {
-    margin-top: 50px;
+    margin-top: 2em;
 }
 
 .button-text a {
@@ -55,9 +68,19 @@ body {
 
 
 .navbar.active {
+    z-index: 2;
     position: fixed;
-    top: -120px;
+    background-color: #fff;
+    
+
+    /*top: -120px;*/
 }
+
+.navbar.active .navbar-toggler .fas {
+    color: rgba(245, 18, 18, 0.842);
+} 
+
+
 
 .navbar-toggler {
     transition: all 0.2s ease-in-out;
@@ -68,8 +91,11 @@ body {
 
 }
 
+
+
 .navbar-brand {
     transition: all 0.2s ease-in-out;
+    padding:0 4em !important;
 }
 
 .nav-item .nav-link {
@@ -94,8 +120,10 @@ body {
     transform: scale(0.98);
 }
 
-.navbar.active a {
-    color: rgba(255, 255, 255, 0.842);
+.navbar.active a,
+.navbar.active .navbar-brand,
+.navbar.active .navbar-brand span:nth-child(3){
+    color: #1a191d !important;
 }
 
 
@@ -103,7 +131,10 @@ body {
     display: flex;
     flex-direction: row;
     gap: 15px;
+    padding: 0 4em!important;
 }
+
+
 
 .nav-link a {
     color: #fff;
@@ -154,8 +185,16 @@ body {
 }
 
 .text-white {
-    margin-top: 100px;
+    /*margin-top: 10em;*/
 
+}
+
+.text-white h1 {
+    font-size: 3em!important;
+}
+
+.text-white h2 {
+    font-size: 2em!important;
 }
 
 /* NAVIGATION SECTION ENDS HERE */
@@ -204,12 +243,13 @@ body {
     transition: all 0.2s ease-in-out;
 }
 
+
 #section07 a span {
 
     position: absolute;
     text-align: center;
-    width: 24px;
-    height: 24px;
+    width: 21px;
+    height: 21px;
     border-left: 2px solid rgba(245, 18, 18, 0.842);
     border-bottom: 2px solid rgba(245, 18, 18, 0.842);
     -webkit-transform: rotate(-45deg);
@@ -217,7 +257,9 @@ body {
     -webkit-animation: sdb07 2s infinite;
     animation: sdb07 2s infinite;
     opacity: 0;
-    margin-top: 150px;
+    bottom: 1em;
+    
+    /*margin-top: 140px;*/
 
 }
 
@@ -277,14 +319,14 @@ body {
 
 #skills-section {
     width: 95%;
-    max-width: 1132px;
-    margin: -150px auto;
+    max-width: 1476px;
+    margin: auto;
     border-radius: 3rem;
     background: url('/img/pexels-la-miko-3616773.jpg');
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
-    padding-bottom: 2rem;
+    /*padding-bottom: 2rem;*/
 }
 
 .skills h2 {
@@ -341,8 +383,8 @@ li {
 /* SERVICES SECTION */
 
 .services {
-    margin: 50px 0 250px 0;
-    padding-top: 50px;
+    /*margin: 50px 0 250px 0;*/
+    padding: 4em 0em;
     position: relative;
     max-height: auto;
 }
@@ -364,7 +406,7 @@ li {
 .container-services .row {
     display: flex;
     gap: 10px;
-    max-width: 1132px;
+    max-width: 1476px;
     margin: auto;
 }
 
@@ -412,14 +454,15 @@ li {
 }
 
 .projects {
-    margin: 250px auto 100px;
+    margin: auto;
     text-align: center;
-    max-width: 1132px;
+    max-width: 1476px;
+    padding: 4em 0;
 }
 
 .grid {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1476px;
     margin: auto;
     padding-bottom: 35px;
     display: flex;
@@ -438,7 +481,7 @@ li {
 }
 
 .project-menu {
-    padding-top: 50px;
+    padding-top: 2em;
     color: rgb(255, 255, 255);
     position: relative;
 }
@@ -518,31 +561,37 @@ li {
 /* BUTTONS */
 
 .learn-more {
-    padding: 5px 15px;
-    border: 1px solid #000000;
-    border-radius: 3rem;
+    padding: 1em 4em;
+    border: 0.1em solid #1a191d;
+    border-radius: 4em;
     position: relative;
     overflow: hidden;
-    background-color: transparent;
+    background-color: #1a191d;
     text-align: center;
     text-transform: uppercase;
     font-size: 1rem;
     transition: .3s;
     z-index: 1;
     font-family: inherit;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
+}
 
+.learn-more:hover {
+    background: transparent;
+    border: 0.1em solid #1a191d;
 }
 
 
 .learn-more a {
     transition: all 0.2s ease-in-out;
+    color: #fff;
 }
 
 
-.learn-more a:hover {
+.learn-more:hover a {
     color: rgba(245, 18, 18, 0.842);
-    font-weight: bold;
+
+    
 }
 
 
@@ -621,7 +670,7 @@ li {
 /* CONTACT FORM */
 
 #contact-section {
-    max-width:1132px;
+    max-width:1476px;
     width: 98%;
 }
 
@@ -638,7 +687,7 @@ li {
     width: 100%;
     border-radius: 3rem;
     margin: auto;
-    padding: 50px 0;
+    padding:2em;
 }
 
 #contact-section h2 {
@@ -796,6 +845,11 @@ textarea:focus {
     transform: scale(0.95);
 }
 
+
+.form-outline .form-control {
+    border: 0.1em solid #1a191d;
+}
+
 @keyframes fly-1 {
     from {
         transform: translateY(0.1em);
@@ -882,6 +936,20 @@ textarea:focus {
 }
 
 
+@media (max-width:1200px) {
+    .navbar-nav,
+    .navbar-brand  {
+        padding: 0!important;
+    }
+
+    
+
+    
+
+
+}
+
+
 
 @media screen and (max-width:840px) {
     .skills-flex hr {
@@ -900,9 +968,21 @@ textarea:focus {
 }
 
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:769px) {
     .skills-flex {
         text-align: center;
         gap: 20px;
+    }
+
+    .navbar-brand {
+        font-size: 1.1em;;
+    }
+
+    .text-white h1 {
+        font-size: 2.3em!important;
+    }
+
+    .services {
+        padding: 1em 0;
     }
 }
