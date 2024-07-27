@@ -121,8 +121,8 @@ body {
 }
 
 .navbar.active a,
-.navbar.active .navbar-brand,
-.navbar.active .navbar-brand span:nth-child(3){
+.navbar.active .navbar-brand strong,
+.navbar.active .navbar-brand span:nth-child(4){
     color: #1a191d !important;
 }
 
@@ -132,6 +132,10 @@ body {
     flex-direction: row;
     gap: 15px;
     padding: 0 4em!important;
+}
+
+.navbar-nav .nav-item {
+    text-wrap: nowrap;
 }
 
 
@@ -578,7 +582,7 @@ li {
 
 .learn-more:hover {
     background: transparent;
-    border: 0.1em solid #1a191d;
+    border: 0.1em solid transparent;
 }
 
 
@@ -659,6 +663,7 @@ li {
 .figure-caption {
     color: rgba(245, 18, 18, 0.842);
     font-weight: bolder;
+    font-size: 1.3em;;
 
 }
 
@@ -979,7 +984,7 @@ textarea:focus {
     }
 
     .text-white h1 {
-        font-size: 2.3em!important;
+        font-size: 2em!important;
     }
 
     .services {
