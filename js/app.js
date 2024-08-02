@@ -83,7 +83,7 @@ function writeText() {
         
     }
 
-    setTimeout(writeText, 50)
+    setTimeout(writeText, 120)
 }
 
 
